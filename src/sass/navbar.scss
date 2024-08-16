@@ -1,0 +1,46 @@
+// navbar.scss
+@import 'variables';
+
+.navbar {
+    background-color: $primary-color;
+    height: $navbar-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .logo {
+        img {
+            height: 40px;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: $font-stack;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .auth-buttons {
+        button {
+            background-color: $secondary-color;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($secondary-color, 10%);
+            }
+        }
+    }
+}
