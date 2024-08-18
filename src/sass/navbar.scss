@@ -1,45 +1,54 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$font-stack: 'Roboto', sans-serif;
 
 .navbar {
-    background-color: $primary-color;
+    background-color: white; /* Changed background color to white */
     height: $navbar-height;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow to the navbar */
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
 
-    .logo {
-        img {
-            height: 40px;
-            width: 30px;
-            margin-top: 10px;
+    .navbar-left {
+        .navbar-logo {
+            height: 60px; 
+            width: 80px; 
         }
     }
 
-    .nav-links {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
+    .navbar-center {
+        .navbar-nav {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
 
-        a {
-            color: white;
-            text-decoration: none;
-            font-family: $font-stack;
-            font-weight: bold;
+            li {
+                a {
+                    color: $primary-color; /* Change text color to primary color */
+                    text-decoration: none;
+                    font-family: $font-stack;
+                    font-weight: bold;
+                    padding: 8px 12px;
+                    border-radius: 4px; /* Optional: adds a slight rounding to the nav items */
 
-            &:hover {
-                color: $secondary-color;
+                    &:hover {
+                        color: $secondary-color;
+                        // background-color: rgba(0, 0, 0, 0.05); /* Optional: adds a background on hover */
+                    }
+                }
             }
         }
     }
 
-    .auth-buttons {
-        display: flex;
-        gap: 15px;
-
+    .navbar-right {
         button {
             background-color: $secondary-color;
             color: white;
@@ -48,6 +57,8 @@
             cursor: pointer;
             font-family: $font-stack;
             font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
 
             &:hover {
                 background-color: darken($secondary-color, 10%);

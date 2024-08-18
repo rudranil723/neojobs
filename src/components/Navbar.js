@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo/logo1.png'; // Adjust the path if needed
+import logo from '../assets/logo/logo1.png'; 
 
 const Navbar = () => {
   return (
@@ -21,7 +21,6 @@ const Navbar = () => {
       </nav>
       <div className="navbar-right">
         <button>Login</button>
-        <button>Sign Up</button>
       </div>
     </header>
   );
