@@ -52,7 +52,7 @@ body {
 }
 
 .home-content p {
-  font-size: 25px;
+  font-size: 25px; /* Font size for p tag inside home-content */
   font-weight: 600; /* Semi-bold */
   margin: 10px 0 20px 0;
   font-family: $font-stack;
@@ -95,3 +95,23 @@ body {
 .search-bar button:hover {
   background-color: darken($secondary-color, 15%);
 }
+
+.more-options p {
+  font-size: 10px; /* Font size for p tag inside more-options */
+  margin-top: 20px;
+}
+
+.more-options a {
+  color: $secondary-color;
+  text-decoration: none;
+  border-bottom: 2px solid $secondary-color;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.more-options a:hover {
+  color: darken($secondary-color, 15%);
+  border-bottom: 2px solid darken($secondary-color, 15%);
+}
+
+
+
