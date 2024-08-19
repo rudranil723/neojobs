@@ -1,22 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$font-stack: 'Roboto', sans-serif;
+
+body {
+  font-family: $font-stack;
+}
+
 .home-content {
-    position: relative; /* Position relative to allow the pseudo-element to be positioned absolutely */
-    height: 80vh;
-    width: 100%;
-    overflow: hidden; /* Ensure no content overflows */
-  }
-  
-  .home-content::before {
-    content: ""; /* Required for the pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/home/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8; /* Adjust the opacity value as needed */
-    z-index: -1; /* Place the pseudo-element behind the content */
-  }
-  
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: flex-start; /* Align content slightly left from the center */
+  padding-left: 20%; /* Adjust padding as needed for horizontal alignment */
+  color: #fff; /* Set text color to white for better visibility */
+}
+
+.home-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/home/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  z-index: -2;
+}
+
+.home-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: -1; 
+}
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  font-family: $font-stack;
+}
+
+.home-content p {
+  font-size: 25px;
+  font-weight: 600; /* Semi-bold */
+  margin: 10px 0 20px 0;
+  font-family: $font-stack;
+}
+
+.search-bar {
+  position: relative;
+  width: 50%;
+  max-width: 500px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 40px 10px 15px; /* Adjust padding for icon */
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
+  color: grey;
+  outline: none;
+  font-family: $font-stack;
+}
+
+.search-bar::before {
+  content: '🔍';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--secondary-color); /* Replace with your secondary color */
+}
