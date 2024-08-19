@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-$font-stack: 'Roboto', sans-serif;
+@import 'variables';
 
 body {
   font-family: $font-stack;
@@ -61,28 +60,38 @@ body {
 
 .search-bar {
   position: relative;
-  width: 50%;
-  max-width: 500px;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
 }
 
 .search-bar input {
-  width: 100%;
-  padding: 10px 40px 10px 15px; /* Adjust padding for icon */
+  width: 90%;
+  padding: 15px 15px;
   font-size: 18px;
-  border-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   border: none;
   background-color: #fff;
-  color: grey;
+  color: rgb(174, 173, 173);
   outline: none;
   font-family: $font-stack;
 }
 
-.search-bar::before {
-  content: '🔍';
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: var(--secondary-color); /* Replace with your secondary color */
+.search-bar button {
+  width: 15%;
+  padding: 10px;
+  font-size: 18px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+  background-color: $secondary-color;
+  color: #fff;
+  cursor: pointer;
+  font-family: $font-stack;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: darken($secondary-color, 15%);
 }
