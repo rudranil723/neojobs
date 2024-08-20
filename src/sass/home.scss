@@ -128,6 +128,7 @@ body {
 }
 
 $bg-image: '../assets/home/bgCS.jpg';
+
 .custom-section {
   background: url($bg-image) no-repeat center center/cover;
   color: white;
@@ -137,25 +138,36 @@ $bg-image: '../assets/home/bgCS.jpg';
   justify-content: space-between;
   align-items: center;
   position: relative;
-
+  
+  h1{
+    font-size: 45px;
+    max-width: 100%;
+  }
   .text-content {
-    max-width: 50%;
+    max-width: 40%;
 
     ul {
       list-style-type: none;
       padding: 0;
+      color: rgba(223, 220, 220,0.6);
+      font-size: 28px;
+      padding-left: 10px;
+      
+      
 
       li {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         position: relative;
         padding-left: 20px;
+        
 
         &::before {
-          content: '\2713';
+          content: '\2714';
           color: green;
           position: absolute;
           left: 0;
           top: 0;
+          font-size: 30px;
         }
       }
     }
@@ -177,22 +189,25 @@ $bg-image: '../assets/home/bgCS.jpg';
 
   .image-content {
     position: relative;
-    width: 50%; /* Keep the image content container at 50% width */
+    width: 50%;
 
     .img1 {
-      width: 550px; 
-      height: 350px; 
+      width: 600px; 
+      height: 450px; 
       display: block;
       margin-left: auto; 
+      border-radius: 20px;
+      margin-right: 50px;
     }
 
     .img2 {
       position: absolute;
-      left: 0%;
-      bottom: -15px; 
-      width: 250px;
+      left: -50px;
+      bottom: -25px; 
+      width: 350px;
       height: 200px;
-      box-shadow: 0px 0px 10px rgba(14, 10, 10, 0.3); /* Optional: add some shadow to the overlapping image */
+      box-shadow: 0px 0px 10px rgba(14, 10, 10, 0.3); 
+      border-radius: 20px;
     }
   }
 }
