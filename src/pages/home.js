@@ -2,11 +2,12 @@ import React from 'react';
 import '../sass/home.scss';
 import '../sass/popularcategories.scss';
 import qmImage from '../assets/home/qm.png';
-
+import img1 from '../assets/home/img1.jpg';
+import img2 from '../assets/home/img2.jpg';
 
 const categories = [
-  { name: "Category 1", link: "/popularcategories/accounting" },
-  { name: "Category 2", link: "/popularcategories/automotive" },
+  { name: "accounting", link: "/popularcategories/accounting" },
+  { name: "automotive", link: "/popularcategories/automotive" },
   { name: "Category 3", link: "/category3" },
   { name: "Category 4", link: "/category4" },
   { name: "Category 5", link: "/category5" },
@@ -20,15 +21,16 @@ const Home = () => {
     <div>
       <div className="home-content">
         <h1>Find Jobs</h1>
-          <p>Hire Experts or be hired in sales & marketing</p>
-          <div className="search-bar">
-            <input type="text" placeholder="Tell us what you are looking for?" />
-            <button type="button">Search</button>
-          </div>
-          <p className="more-options">
-            Need more search options? <a href="/advanced-search">Advanced Search</a>
-          </p>
+        <p>Hire Experts or be hired in sales & marketing</p>
+        <div className="search-bar">
+          <input type="text" placeholder="Tell us what you are looking for?" />
+          <button type="button">Search</button>
+        </div>
+        <p className="more-options">
+          Need more search options? <a href="/advanced-search">Advanced Search</a>
+        </p>
       </div>
+
       <div className="popular-categories">
         <h2>Popular Categories</h2>
         <div className="categories-grid">
@@ -38,6 +40,22 @@ const Home = () => {
               <p>{category.name}</p>
             </a>
           ))}
+        </div>
+      </div>
+
+      <div className="custom-section">
+        <div className="text-content">
+          <h1>Explore a faster, easier, and better job search</h1>
+          <ul>
+            <li>Unmatched quality of remote, hybrid, and flexible jobs</li>
+            <li>Premium skills tests, remote courses, career coaching, and more</li>
+            <li>Unmatched quality of remote, hybrid, and flexible jobs</li>
+          </ul>
+          <button className="browse-btn">Browse Jobs</button>
+        </div>
+        <div className="image-content">
+          <img src={img1} alt="Image 1" className="img1" />
+          <img src={img2} alt="Image 2" className="img2" />
         </div>
       </div>
     </div>
