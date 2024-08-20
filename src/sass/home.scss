@@ -2,7 +2,7 @@
 @import 'variables';
 
 body {
-  font-family: $font-stack;
+  font-family: $font-stack; // Use Roboto font everywhere
 }
 
 .home-content {
@@ -128,7 +128,6 @@ body {
 }
 
 $bg-image: '../assets/home/bgCS.jpg';
-
 .custom-section {
   background: url($bg-image) no-repeat center center/cover;
   color: white;
@@ -137,6 +136,7 @@ $bg-image: '../assets/home/bgCS.jpg';
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   .text-content {
     max-width: 50%;
@@ -175,22 +175,24 @@ $bg-image: '../assets/home/bgCS.jpg';
     }
   }
 
-  .image-content {  
-    position: relative;  
-    display: flex;  
-    align-items: center;  
-   
-    .img1 {  
-      width: 300px;  
-      height: auto;  
-    }  
-   
-    .img2 {  
-      position: absolute;  
-      width: 200px;  
-      height: auto;  
-      left: -120px;  
-      bottom: -25px;
-    }  
-  }  
+  .image-content {
+    position: relative;
+    width: 50%; /* Keep the image content container at 50% width */
+
+    .img1 {
+      width: 550px; 
+      height: 350px; 
+      display: block;
+      margin-left: auto; 
+    }
+
+    .img2 {
+      position: absolute;
+      left: 0%;
+      bottom: -15px; 
+      width: 250px;
+      height: 200px;
+      box-shadow: 0px 0px 10px rgba(14, 10, 10, 0.3); /* Optional: add some shadow to the overlapping image */
+    }
+  }
 }
