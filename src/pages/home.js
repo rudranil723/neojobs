@@ -61,6 +61,10 @@ const Home = () => {
           <img src={img2} alt="Image 2" className="img2" />
         </div>
       </div>
+      <div className="user-reviews">
+        <h2>What Our Users Say 😍</h2>
+        <p>Check honest reviews from our customers!</p>
+      </div>
     </div>
   );
 };
