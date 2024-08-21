@@ -40,6 +40,9 @@ const Home = () => {
               <p>{category.name}</p>
             </a>
           ))}
+          <div className='pcbtn'>
+          <button className="all-categories-btn">All Categories</button> 
+          </div>
         </div>
       </div>
 

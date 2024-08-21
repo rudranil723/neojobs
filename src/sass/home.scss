@@ -120,11 +120,35 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   margin-bottom: 50px;
   padding-bottom: 20px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+
+  .pcbtn{
+    padding-left: 200%;
+
+  .all-categories-btn { 
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: $secondary-color;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+
+    &:hover {
+      background-color: darken($secondary-color, 15%);
+    }
+  }
+}
 }
 
 $bg-image: '../assets/home/bgCS.jpg';
@@ -139,27 +163,25 @@ $bg-image: '../assets/home/bgCS.jpg';
   align-items: center;
   position: relative;
   
-  h1{
+  h1 {
     font-size: 45px;
     max-width: 100%;
   }
+
   .text-content {
     max-width: 40%;
 
     ul {
       list-style-type: none;
       padding: 0;
-      color: rgba(223, 220, 220,0.6);
+      color: rgba(223, 220, 220, 0.6);
       font-size: 28px;
       padding-left: 10px;
       
-      
-
       li {
         margin-bottom: 15px;
         position: relative;
         padding-left: 20px;
-        
 
         &::before {
           content: '\2714';
@@ -180,6 +202,9 @@ $bg-image: '../assets/home/bgCS.jpg';
       border-radius: 5px;
       cursor: pointer;
       margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; /* Center the button */
 
       &:hover {
         background-color: darkgreen;
