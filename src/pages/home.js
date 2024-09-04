@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../sass/home.scss';
 import '../sass/popularcategories.scss';
 import '../css/home.css';
-import '../sass/footer.scss';
 import qmImage from '../assets/home/qm.png';
 import img1 from '../assets/home/img1.jpg';
 import img2 from '../assets/home/img2.jpg';
@@ -158,71 +157,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
-      {/* Footer Section */}
-      <footer className="site-footer">
-        <div className="footer-content">
-          <div className="footer-logo">
-            <img src="path/to/logo.png" alt="Company Logo" />
-          </div>
-          <div className="footer-links">
-            <div className="footer-column">
-              <h4>For Candidates</h4>
-              <ul>
-                <li><a href="#">Browse Jobs</a></li>
-                <li><a href="#">Browse Categories</a></li>
-                <li><a href="#">Candidate Dashboard</a></li>
-                <li><a href="#">Job Alerts</a></li>
-                <li><a href="#">My Bookmarks</a></li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>For Employers</h4>
-              <ul>
-                <li><a href="#">Browse Candidates</a></li>
-                <li><a href="#">Employer Dashboard</a></li>
-                <li><a href="#">Add Job</a></li>
-                <li><a href="#">Job Packages</a></li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>Other</h4>
-              <ul>
-                <li><a href="#">Job Page</a></li>
-                <li><a href="#">Task Page</a></li>
-                <li><a href="#">Resume Page</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>Legal</h4>
-              <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </div>
-            <div className="footer-column newsletter">
-              <h4>Sign Up For a Newsletter</h4>
-              <p>Weekly breaking news, analysis and cutting-edge advice on job searching.</p>
-              <form>
-                <input type="email" placeholder="Enter your email here" />
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()}  All Rights Reserved.</p>
-          <ul className="social-icons">
-            <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </footer>
     </div>
   );
 };

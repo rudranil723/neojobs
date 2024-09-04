@@ -1,0 +1,7 @@
+.footer-logo img {
+    width: auto;      /* Maintain the aspect ratio of the image */
+    height: 50%;      /* Set the height to 50% of the containing element */
+    max-height: 50px; /* Optional: limit the maximum height to ensure consistency */
+    display: block;   /* Ensures that the image is treated as a block-level element */
+    margin: 0 auto;   /* Center the image horizontally if needed */
+}
