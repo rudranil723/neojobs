@@ -4,6 +4,13 @@ import '../sass/contact.scss';
 const ContactPage = () => {
     return (
         <div className="contact-page">
+            <div className="contact-header">
+                <h1>Contacts</h1>
+                <div className="contact-buttons">
+                    <button className="btn-home" onClick={() => window.location.href = "/"}>Home</button>
+                    <button className="btn-contact" onClick={() => window.location.href = "/contact"}>Contact</button>
+                </div>
+            </div>
             <div className="contact-box">
                 <div className="office-details">
                     <h2>Our Office</h2>
