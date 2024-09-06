@@ -3,12 +3,15 @@
 .jobs-page {
   font-family: $font-stack;
   font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 
   .top-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin-bottom: 25px;
 
     .job-category {
       span {
@@ -57,7 +60,8 @@
     margin: 20px 5%;
     border-radius: 10px;
     width: 90%;
-    height: 120px;
+    height: 100px;
+    margin-bottom: 85px;
 
     .briefcase-img {
       width: 80px;
@@ -75,12 +79,13 @@
       p {
         font-weight: 700;
         margin-bottom: 5px;
-        font-size: 18px;
+        font-size: 15px;
       }
 
       .company-links {
         display: flex;
         gap: 15px;
+        font-size: 12px;
 
         a {
           color: $primary-color;
@@ -110,17 +115,32 @@
     }
   }
 
-  .job-details-grid {
+  .content-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 70% 30%; /* 70% for video, 30% for job overview */
+    gap: 15px;
     margin: 20px 5%;
+    align-items: stretch;
 
-    .job-video {
+    .video-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       iframe {
         width: 100%;
+        height: 450px; 
         border-radius: 10px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .video-description {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        font-size: 15px;
       }
     }
 
@@ -129,10 +149,14 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
 
       h2 {
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 22px;
       }
 
       ul {
@@ -141,27 +165,43 @@
 
         li {
           display: flex;
-          align-items: center;
-          margin-bottom: 10px;
-          font-size: 18px;
+          flex-direction: column; 
+          margin-bottom: 4%; 
+          font-size: 15px;
+
+          strong {
+            font-weight: 700;
+          }
+
+          span {
+            margin-top: 5px; 
+            color: #a4a4a4; 
+          }
 
           svg {
             margin-right: 10px;
             color: #6fbf73;
           }
-
-          strong {
-            margin-right: 5px;
-          }
         }
       }
 
       .apply-btn {
-        margin-top: 20px;
+        background-color: $secondary-color;
+        color: #ffffff;
+        margin-top: 10px;
         width: 100%;
         text-align: center;
         height: 10%;
+        padding: 10px 20px;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
       }
+      
     }
   }
 }
