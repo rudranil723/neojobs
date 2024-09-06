@@ -108,6 +108,24 @@ const JobsPage = () => {
             aria-hidden="false"
             tabIndex="0"
           ></iframe>
+
+
+          <div className="search-section">
+            <div className="search-bar">
+              <input type="text" placeholder="Search job title or location" className="search-input" />
+              <button className="clear-btn">Clear</button>
+              <button className="search-btn">Search</button>
+            </div>
+          
+            <div className="job-listings">
+              <div className="job-listing-item">
+                <h4>Construction Worker</h4>
+                <p>Moore & Kavinsky</p>
+                <p>Munich, Germany</p>
+                <button className="apply-now-btn">Apply Now</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
