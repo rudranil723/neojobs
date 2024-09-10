@@ -1,5 +1,5 @@
 import React from 'react';
-import briefcaseImage from '../assets/jobs/placeholder.webp';
+import briefcaseImage from '../../assets/jobs/placeholder.webp';
 import { FaCalendarAlt, FaMapMarkerAlt, FaClock, FaDollarSign } from 'react-icons/fa';
 import '../../sass/jobprofile.scss';
 
