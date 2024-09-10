@@ -34,7 +34,7 @@ const ContactPage = () => {
             <div className="contact-box">
                 <div className="office-details">
                     <h2>Our Office</h2>
-                    <p> Kolkata 700001, India</p>
+                    <p> WeWork Vaishnavi Signature. 78/9, Outer Ring Road, Hobli, beside Soul Space Spirit Central Mall, Bellandur, Varthur, Bengaluru, Karnataka 560103</p>
                     <p>Phone: +91 8918001300</p>
                     <p><a href="mailto:mail@example.com" className="email-link">mail@example.com</a></p>
                     <div className="social-icons">

@@ -1,123 +1,114 @@
 import React from 'react';
-import '../sass/jobs.scss';
-import briefcaseImage from '../assets/jobs/placeholder.webp';
-import { FaCalendarAlt, FaMapMarkerAlt, FaClock, FaDollarSign } from 'react-icons/fa';
+import '../sass/jobs.scss'; // This is where the SCSS styles will be written
+import { FaMapMarkerAlt, FaDollarSign } from 'react-icons/fa';
+
+// Images for job ads
+import logo1 from '../assets/jobs/company-logo-06-150x150.webp';
+import logo2 from '../assets/jobs/company-logo-03-150x150.webp';
 
 const JobsPage = () => {
   return (
-    <div className="jobs-page">
-      {/* Top Section */}
-      <div className="top-section">
-        <div className="job-category">
-          <span>Construction / Facilities</span>
-          <h1>Grader Operator <span className="internship-tag">Internship</span></h1>
+    <div className="jobs-container">
+      {/* Left Section: Job Ads */}
+      <div className="jobs-list">
+        <h2>Find Job</h2>
+        <div className="job-filters">
+          <input type="text" placeholder="Job title, keywords or company name" />
+          <input type="text" placeholder="Location" />
+          <select>
+            <option>Choose a category</option>
+            <option>Full Time</option>
+            <option>Part Time</option>
+            <option>Internship</option>
+          </select>
         </div>
-        <button className="bookmark-btn">Login to bookmark</button>
+
+        <div className="job-cards">
+          {/* Each job card */}
+          <JobCard 
+            logo={logo1} 
+            title="Restaurant Dishwasher" 
+            company="King" 
+            location="London, UK" 
+            salary="$55,000.00 - $70,000.00"
+            type="Full Time"
+          />
+          <JobCard 
+            logo={logo2} 
+            title="Grader Operator" 
+            company="Moore & Kavinsky" 
+            location="Munich, Germany" 
+            salary="$35,000.00 - $38,000.00"
+            type="Internship"
+          />
+          {/* Add 4 more cards */}
+          <JobCard 
+            logo={logo1} 
+            title="Software Developer" 
+            company="TechCo" 
+            location="Berlin, Germany" 
+            salary="$80,000.00 - $100,000.00"
+            type="Full Time"
+          />
+          <JobCard 
+            logo={logo2} 
+            title="Graphic Designer" 
+            company="Creative Studio" 
+            location="Paris, France" 
+            salary="$45,000.00 - $55,000.00"
+            type="Full Time"
+          />
+          <JobCard 
+            logo={logo1} 
+            title="Data Analyst" 
+            company="DataCorp" 
+            location="New York, USA" 
+            salary="$70,000.00 - $85,000.00"
+            type="Full Time"
+          />
+          <JobCard 
+            logo={logo2} 
+            title="Marketing Manager" 
+            company="BrandX" 
+            location="Toronto, Canada" 
+            salary="$60,000.00 - $75,000.00"
+            type="Full Time"
+          />
+        </div>
       </div>
 
-      {/* Company Info Box */}
-      <div className="company-info-box">
-        <img src={briefcaseImage} alt="Company Briefcase" className="briefcase-img" />
-        <div className="company-details">
-          <p>Moore & Kavinsky</p>
-          <div className="company-links">
-            <a href="#">Website</a>
-            <a href="#">test@example.com</a>
-            <a href="#">Login to Send Message</a>
-          </div>
-        </div>
-        <button className="apply-btn">Apply for Job</button>
-      </div>
-
-      <div className="content-grid">
-        <div className="video-section">
+      {/* Right Section: Map */}
+      <div className="jobs-map">
+        <h2>Job Locations</h2>
+        <div id="map-container">
+          {/* The map element */}
           <iframe
+            title="India Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15921724.330819353!2d70.57928355973683!3d20.74800097962157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bf03fc1aee2792d%3A0x3679f9b71e3db500!2sIndia!5e0!3m2!1sen!2sin!4v1631681457825!5m2!1sen!2sin"
             width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/PFkzyLHiEPw"
-            title="YouTube video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <div className="video-description">
-            <p>The Heavy Equipment / Grader Operator is responsible for operating one or several types of power construction equipment, such as front end loader, roller, bulldozer, or excavator in order to move, excavate, and grade earth, erect structures, or pour concrete or other hard surface pavements.</p>
-          </div>
-        </div>
-
-        <div className="job-overview">
-          <h2>Job Overview</h2>
-          <ul>
-            <li>
-              <FaCalendarAlt className="icon" /> Date Posted: <span>Posted 5 years ago</span>
-            </li>
-            <li>
-              <FaCalendarAlt className="icon" /> Expiration Date: <span>April 15, 2027</span>
-            </li>
-            <li>
-              <FaMapMarkerAlt className="icon" /> Location: <span>Munchen, Germany</span>
-            </li>
-            <li>
-              <FaClock className="icon" /> Hours: <span>44h / week</span>
-            </li>
-            <li>
-              <FaDollarSign className="icon" /> Rate: <span>$15 - $25 / hour</span>
-            </li>
-            <li>
-              <FaDollarSign className="icon" /> Salary: <span>$35,000.00 - $38,000.00</span>
-            </li>
-          </ul>
-          <button className="apply-btn">Apply for job</button>
-        </div>
-      </div>
-
-      
-      <div className="job-details-section" style={{ marginTop: '25px' }}>
-        <div className="responsibilities">
-          <h3>Primary Responsibilities:</h3>
-          <ul>
-            <li>✔️ Take action to avoid potential hazards and obstructions, such as utility lines, other equipment, other workers, and falling objects.</li>
-            <li>✔️ Start engines, move throttles, switches, and levers, and depress pedals to operate such stated machines.</li>
-            <li>✔️ Align machines with reference stakes and guidelines or ground or position equipment, following hand signals of other workers.</li>
-            <li>✔️ Load and move dirt, rocks, equipment, and materials, using trucks, crawler tractors, shovels, graders, or related equipment.</li>
-            <li>✔️ Coordinate machine actions with other activities, positioning or moving loads in response to hand or audio signals from crew members.</li>
-          </ul>
-          
-          <h3>Requirements:</h3>
-          <ul>
-            <li>✔️ Must have a minimum of 3 years experience running, maneuvering, driving, and navigating equipment such as bulldozer, excavators, rollers, and front-end loaders.</li>
-            <li>✔️ Strongly prefer candidates with a High School Diploma.</li>
-            <li>✔️ Must be able to communicate with others to convey information effectively.</li>
-            <li>✔️ Must be accustomed to working outdoors with exposure to all weather conditions.</li>
-            <li>✔️ Must be able to perform physical activities that require considerable use of your arms and legs and moving your whole body, such as climbing, lifting, balancing, walking, stooping, and handling of materials.</li>
-            <li>✔️ Must be knowledgeable of safety procedures and practices.</li>
-          </ul>
-        </div>
-
-        {/* Map Section */}
-        <div className="location-map">
-          <h3>Job Location</h3>
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1769.6030915755363!2d88.3476023!3d22.572646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a9e9c8f9b9%3A0x67e201b1299e7e4!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1630495752003!5m2!1sen!2sin"
-            title="Kolkata Location"
-            frameBorder="0"
+            height="400px"
             style={{ border: 0 }}
             allowFullScreen=""
-            aria-hidden="false"
-            tabIndex="0"
+            loading="lazy"
           ></iframe>
-
-
-          <div className="search-section">
-            <h3>Bookmarks & Share</h3>
-            <div className="search-bar">
-              <input type="text" placeholder="Search job title or location" className="search-input" />
-              <button className="clear-btn"><i className="fas fa-search"></i></button>
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+const JobCard = ({ logo, title, company, location, salary, type }) => {
+  return (
+    <div className="job-card">
+      <img src={logo} alt={company} className="job-logo" />
+      <div className="job-details">
+        <h3>{title}</h3>
+        <p>{company}</p>
+        <div className="job-meta">
+          <span><FaMapMarkerAlt /> {location}</span>
+          <span><FaDollarSign /> {salary}</span>
+        </div>
+        <span className={`job-type ${type.replace(' ', '-').toLowerCase()}`}>{type}</span>
       </div>
     </div>
   );
