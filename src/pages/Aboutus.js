@@ -28,6 +28,7 @@ const Aboutus = () => {
                 </div>
             </div>
 
+
             {/* Awards Section */}
             <div className="awards-section">
                 <div className="award-card">
@@ -44,12 +45,11 @@ const Aboutus = () => {
                 </div>
             </div>
 
-
             {/* Founders Section */}
             <div className="founders-section">
-            <div className='heading'>
-                <h2>Our Founders</h2>
-            </div>
+                <div className='heading'>
+                    <h2>Our Founders</h2>
+                </div>
                 {/* CEO Section */}
                 <div className="founder">
                     <div className="founder-info">
@@ -65,7 +65,7 @@ const Aboutus = () => {
 
                 {/* Co-Founder Section */}
                 <div className="founder">
-                <div className="founder-img">
+                    <div className="founder-img">
                         <img src={require('../assets/aboutus/NitalShah.png')} alt="Nital Shah" />
                     </div>
                     <div className="founder-info">
@@ -74,7 +74,30 @@ const Aboutus = () => {
                         Nital embodies the much-needed structure, and decisiveness that enables Uplers to navigate complex and uncertain micro and macro environments, whilst keeping our eye on the mission. With a steadfast yet flexible approach, Nital anchors our teams and processes, fostering a people-centric, growth-focused culture built on trust and transparency.
                         </p>
                     </div>
-                    
+                </div>
+            </div>
+
+            {/* Brand Section */}
+            <div className="brand-section">
+                <div className="brand-content">
+                    <div className="brand-text">
+                        <h2>Our Brand</h2>
+                        <p>
+                            We are driven by the desire to uplift everyone we touch.
+                        </p>
+                        <p>
+                            Technology, Empathy, and Agility are the key pillars of our brand, enabling us to adapt quickly in response to changing market dynamics but doing so in the most humane way possible whilst leveraging the power of emerging technologies like AI & ML.
+                        </p>
+                        <p>
+                            Our origami-inspired design language reflects our ability to adapt quickly when needed whilst remaining creative and flexible in our approach to meet the current and future needs of clients and talents.
+                        </p>
+                        <p>
+                            We aspire to be most responsive to both clients and talents, and that's how we'll add the greatest value to all stakeholders throughout the typical hiring journey.
+                        </p>
+                    </div>
+                    <div className="brand-image">
+                        <img src={require('../assets/aboutus/brand.png')} alt="Brand Representation" />
+                    </div>
                 </div>
             </div>
         </div>

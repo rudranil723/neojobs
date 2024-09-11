@@ -146,4 +146,43 @@ body {
       }
     }
   }
+
+  .brand-section {
+    background-color: $secondary-color; // Use secondary color as background
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand-text {
+            width: 60%;
+            color: #000;
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.8;
+                margin-bottom: 15px;
+            }
+        }
+
+        .brand-image {
+            width: 35%;
+            img {
+                max-width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}
 }
