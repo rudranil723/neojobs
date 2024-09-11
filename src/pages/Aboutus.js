@@ -30,15 +30,20 @@ const Aboutus = () => {
 
             {/* Awards Section */}
             <div className="awards-section">
-                <div className="award-item">
+                <div className="award-card">
                     <img src={require('../assets/aboutus/grat-work.jpg')} alt="Great Place to Work" />
-                    <p>Great Place to Work Certified</p>
+                    <div className="award-content">
+                        <h4>Great Place to Work Certified</h4>
+                    </div>
                 </div>
-                <div className="award-item">
+                <div className="award-card">
                     <img src={require('../assets/aboutus/indian-achive-logo.png')} alt="India Achievers' Award" />
-                    <p>India Achievers' Award</p>
+                    <div className="award-content">
+                        <h4>India Achievers' Award</h4>
+                    </div>
                 </div>
             </div>
+
 
             {/* Founders Section */}
             <div className="founders-section">
