@@ -7,7 +7,7 @@ import JobProfilePage from './pages/jobprofilepage/jobprofile';
 import FreelancerPage from './pages/freelancer';
 // import Companies from './pages/companies';
 // import Hackathon from './pages/hackathon';
-// import AboutUs from './pages/about-us';
+import Aboutus from './pages/Aboutus';
 import ContactPage from './pages/contact';
 import Navbar from './components/Navbar';
 import Footer from './components/footer';
@@ -21,9 +21,7 @@ function App() {
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/jobs/:id" element={<JobProfilePage />} /> 
         <Route path="/freelancers" element={<FreelancerPage />} />
-        {/* <Route path="/companies" element={<Companies />} />
-        <Route path="/hackathon" element={<Hackathon />} />
-        <Route path="/about-us" element={<AboutUs />} />*/}
+        <Route path="/about-us" element={<Aboutus />} />  
         <Route path="/contact" element={<ContactPage  />} /> 
       </Routes>
       <Footer />
