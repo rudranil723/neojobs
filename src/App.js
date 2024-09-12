@@ -11,6 +11,8 @@ import Aboutus from './pages/Aboutus';
 import ContactPage from './pages/contact';
 import Navbar from './components/Navbar';
 import Footer from './components/footer';
+import Presspage from './components/presspage';
+
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/jobs/:id" element={<JobProfilePage />} /> 
         <Route path="/freelancers" element={<FreelancerPage />} />
-        <Route path="/about-us" element={<Aboutus />} />  
+        <Route path="/about-us" element={<Aboutus />} /> 
+        <Route path="/presspage" element={<Presspage />} />
         <Route path="/contact" element={<ContactPage  />} /> 
       </Routes>
       <Footer />

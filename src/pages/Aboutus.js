@@ -1,5 +1,6 @@
 import React from 'react';
 import '../sass/aboutus.scss';
+import { Link } from 'react-router-dom';
 
 const Aboutus = () => {
     return (
@@ -99,6 +100,11 @@ const Aboutus = () => {
                         <img src={require('../assets/aboutus/brand.png')} alt="Brand Representation" />
                     </div>
                 </div>
+            </div>
+            <div className='Pressbutton'>
+            <Link to="/presspage">
+                <button>View Press Coverage</button>
+            </Link>
             </div>
         </div>
     );
