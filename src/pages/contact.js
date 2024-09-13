@@ -28,6 +28,7 @@ const ContactPage = () => {
                 <h1>Contacts</h1>
                 <div className="contact-buttons">
                     <button className="btn-home" onClick={() => window.location.href = "/"}>Home</button>
+                    <span className="arrow-icon">{'>'}</span>
                     <button className="btn-contact" onClick={() => window.location.href = "/contact"}>Contact</button>
                 </div>
             </div>
