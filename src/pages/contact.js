@@ -60,26 +60,27 @@ const ContactPage = () => {
             <div className="contact-form-container">
                 <h2>Get in Touch</h2>
                 <form onSubmit={handleSubmit} className="contact-form">
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                    
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    
+                    <div className="form-row">
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder="Name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            placeholder="Email"
+                            required
+                        />
+                    </div>
+
                     <label htmlFor="message">Message:</label>
                     <textarea
                         id="message"
@@ -88,8 +89,8 @@ const ContactPage = () => {
                         onChange={handleChange}
                         required
                     />
-                    
-                    <button type="submit" className="btn-submit">Submit</button>
+
+                    <button type="submit" className="btn-submit">Send</button>
                 </form>
             </div>
         </div>
