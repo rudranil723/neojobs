@@ -1,8 +1,3 @@
-@import 'variables';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-$font-stack: 'Roboto', sans-serif;
-
 .navbar {
     background-color: white; 
     height: $navbar-height;
@@ -31,18 +26,52 @@ $font-stack: 'Roboto', sans-serif;
             margin: 0;
 
             li {
+                position: relative;
+
                 a {
-                    color: $primary-color; /* Change text color to primary color */
+                    color: $primary-color;
                     text-decoration: none;
                     font-family: $font-stack;
                     font-weight: bold;
                     padding: 8px 12px;
-                    border-radius: 4px; /* Optional: adds a slight rounding to the nav items */
+                    border-radius: 4px;
 
                     &:hover {
                         color: $secondary-color;
-                        // background-color: rgba(0, 0, 0, 0.05); /* Optional: adds a background on hover */
                     }
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: white;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                    list-style: none;
+                    padding: 10px 0;
+                    min-width: 180px;
+                    border-radius: 4px;
+                    z-index: 999;
+
+                    li {
+                        a {
+                            display: block;
+                            padding: 10px 15px;
+                            white-space: nowrap;
+                            color: $primary-color;
+                            text-decoration: none;
+
+                            &:hover {
+                                background-color: $secondary-color;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                &:hover .dropdown-menu {
+                    display: block;
                 }
             }
         }
