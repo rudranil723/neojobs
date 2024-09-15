@@ -1,0 +1,71 @@
+@import '../sass/variables.scss'; 
+
+.skills-page {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #004225;
+    height: 50vh;
+    border-radius: 20px;  // Add this for rounded edges
+    overflow: hidden;
+
+    .skills-content {
+        margin-left: 10%;
+        color: white;
+        max-width: 650px;
+        font-family: $font-stack;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-bottom: 10px;
+            
+
+            input {
+                width: 80%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px 0 0 5px;
+                font-size: 1rem;
+                outline: none;
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: $secondary-color;
+                border: none;
+                border-radius: 0 5px 5px 0;
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($secondary-color, 10%);
+                }
+            }
+        }
+
+        .talk-to-us {
+            font-size: 1rem;
+            color: $secondary-color;
+        }
+    }
+
+    .hero-section {
+        img {
+            max-width: 500px;
+            border-radius: 10px;
+        }
+    }
+}
