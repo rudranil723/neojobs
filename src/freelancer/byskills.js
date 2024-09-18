@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import './byskills.scss';
-import heroImage from '../assets/freelancer/Hero Marketing images.webp'; // Adjust path as necessary
-
+import heroImage from '../assets/freelancer/Hero Marketing images.webp'; 
+import graphicDesign from '../assets/freelancer/graphic-design.webp';
+import mobileDev from '../assets/freelancer/mobile.webp';
+import softwareDev from '../assets/freelancer/sd.webp';
+import websiteDesign from '../assets/freelancer/website.webp';
+import threeDArtist from '../assets/freelancer/3d.webp';
 const Skills = () => {
     const [activeMenu, setActiveMenu] = useState(null);
 
@@ -151,7 +155,7 @@ const Skills = () => {
                 </ul>
             </div>
 
-            {/* Existing Skills Section */}
+           
             <div className="skills-page">
                 <div className="skills-content">
                     <h1>A premium business solution for trusted talent, guaranteed.</h1>
@@ -166,6 +170,32 @@ const Skills = () => {
                 </div>
                 <div className="hero-section">
                     <img src={heroImage} alt="Hero Marketing" />
+                </div>
+            </div>
+            <div className="skills-cards">
+                <div className="card">
+                    <img src={graphicDesign} alt="Graphic Designers" />
+                    <p>Graphic Designers</p>
+                </div>
+                <div className="card">
+                    <img src={websiteDesign} alt="Website Designers" />
+                    <p>Website Designers</p>
+                </div>
+                <div className="card">
+                    <img src={mobileDev} alt="Mobile App Developers" />
+                    <p>Mobile App Developers</p>
+                </div>
+                <div className="card">
+                    <img src={softwareDev} alt="Software Developers" />
+                    <p>Software Developers</p>
+                </div>
+                <div className="card">
+                    <img src={threeDArtist} alt="3D Artists" />
+                    <p>3D Artists</p>
+                </div>
+                <div className="card">
+                    <img src={graphicDesign} alt="Illustrators" />
+                    <p>Illustrators</p>
                 </div>
             </div>
         </div>
