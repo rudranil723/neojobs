@@ -198,6 +198,34 @@ const Skills = () => {
                     <p>Illustrators</p>
                 </div>
             </div>
+            <div className="skills-info">
+                <h2>A whole world of freelance talent at your fingertips</h2>
+                <div className="skills-cards">
+                    <div className="skill-card">
+                    <img src={require('F:/NEOJOBS/neojobs/src/assets/freelancer/categories.72379ee.svg')} alt="categories icon" />
+                    <h3>Over 700 categories</h3>
+                    <p>Get results from skilled freelancers from all over the world, for every task, at any price point.</p>
+                    </div>
+
+                    <div className="skill-card">
+                    <img src={require('F:/NEOJOBS/neojobs/src/assets/freelancer/handshake.287b5d3.svg')} alt="handshake icon" />
+                    <h3>Clear, transparent pricing</h3>
+                    <p>Pay per project or by the hour (Pro). Payments only get released when you approve.</p>
+                    </div>
+
+                    <div className="skill-card">
+                    <img src={require('F:/NEOJOBS/neojobs/src/assets/freelancer/lightning.2cded3f.svg')} alt="lightning icon" />
+                    <h3>Quality work done faster</h3>
+                    <p>Filter to find the right freelancers quickly and get great work delivered in no time, every time.</p>
+                    </div>
+
+                    <div className="skill-card">
+                    <img src={require('F:/NEOJOBS/neojobs/src/assets/freelancer/support.660ad7f.svg')} alt="support icon" />
+                    <h3>24/7  support</h3>
+                    <p>Chat with our team to get your questions answered or resolve any issues with your orders.</p>
+                    </div>
+                </div>
+                </div>
         </div>
     );
 };
