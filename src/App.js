@@ -13,6 +13,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/footer';
 import Presspage from './components/presspage';
 import FreelancerProfile from './pages/freelancerprofile/freelancerprofile';
+import Login from './components/login';
+import Register from './components/register';  
 
 function App() {
   return (
@@ -26,11 +28,12 @@ function App() {
         <Route path="/freelancer/byskills" element={<Skills />} /> 
         <Route path="/freelancer/bylocation" element={<Location />} /> 
         <Route path="/freelancer/bycategories" element={<Categories />} /> 
-        <Route path="/freelancers/view-more" element={<FreelancerPage />} />
         <Route path="/about-us" element={<Aboutus />} /> 
         <Route path="/presspage" element={<Presspage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/freelancerprofile" element={<FreelancerProfile />} /> 
+        <Route path="/login" element={<Login />} />   
+        <Route path="/register" element={<Register />} /> 
       </Routes>
       <Footer />
     </Router>

@@ -29,7 +29,7 @@ const Navbar = () => {
                 <li><Link to="/freelancer/byskills">By Skills</Link></li>
                 <li><Link to="/freelancer/bylocation">By Locations</Link></li>
                 <li><Link to="/freelancer/bycategories">By Categories</Link></li>
-                <li><Link to="/freelancers/view-more">View More</Link></li>
+                {/* <li><Link to="/freelancers/view-more">View More</Link></li> */}
               </ul>
             )}
           </li>

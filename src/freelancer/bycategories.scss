@@ -56,3 +56,31 @@
         border-top: 2px solid #e0e0e0;
     }
 }
+
+.form-toggle {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+
+    .toggle-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &.active {
+            background-color: $secondary-color;
+            color: white;
+        }
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
