@@ -5,9 +5,10 @@ import '../css/home.css';
 import qmImage from '../assets/home/qm.png';
 import img1 from '../assets/home/img1.jpg';
 import img2 from '../assets/home/img2.jpg';
+import bgg from '../assets/home/bgg.png';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const categories = [
   { name: "accounting", link: "/popularcategories/accounting" },
@@ -38,10 +39,25 @@ const Home = () => {
   };
 
   return (
-    <div>
-
+    <div className='home-page'>
       <div className='home-searchbar'>
-
+        <div className='search-form'>
+          <h2>Find Job</h2>
+          <p>Hire Experts or be hired in sales & marketing</p>
+          <input type="text" placeholder="Job title, Skill, Industry" />
+          <input type="text" placeholder="City, State or Zip" />
+          <select>
+            <option>All Categories</option>
+            {categories.map((category, index) => (
+              <option key={index} value={category.name}>{category.name}</option>
+            ))}
+          </select>
+          <button className='search-button'>Search</button>
+          <p className="advanced-search">Need more search options? <a href="/advancedsearch">Advanced Search</a></p>
+        </div>
+        <div className='search-image'>
+        <img src={bgg} alt="Blog 2" />
+        </div>
       </div>
 
 
