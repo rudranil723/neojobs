@@ -60,24 +60,7 @@ const Home = () => {
         </div>
       </div>
 
-
-      <div className="popular-categories">
-        <h2>Popular Categories</h2>
-        <div className="categories-grid">
-          {categories.map((category, index) => (
-            <a key={index} href={category.link} className="category-box">
-              <img src={qmImage} alt="Question Mark" />
-              <p>{category.name}</p>
-            </a>
-          ))}
-        </div>
-        <div className='pcbtn'>
-          <button className="all-categories-btn">All Categories</button> 
-        </div>
-      </div>
-
-
-
+      <div className='Popular Categories'></div>
       
       <hr></hr>
       <div className="our-blog-section">
