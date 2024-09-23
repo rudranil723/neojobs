@@ -40,54 +40,7 @@ const Home = () => {
 
   return (
     <div className='home-page'>
-      <div className='home-searchbar'>
-        <div className='search-form'>
-          <h2>Find Job</h2>
-          <p>Hire Experts or be hired in sales & marketing</p>
-          <input type="text" placeholder="Job title, Skill, Industry" />
-          <input type="text" placeholder="City, State or Zip" />
-          <select>
-            <option>All Categories</option>
-            {categories.map((category, index) => (
-              <option key={index} value={category.name}>{category.name}</option>
-            ))}
-          </select>
-          <button className='search-button'>Search</button>
-          <p className="advanced-search">Need more search options? <a href="/advancedsearch">Advanced Search</a></p>
-        </div>
-        <div className='search-image'>
-        <img src={bgg} alt="Blog 2" />
-        </div>
-      </div>
-
-      <div className='Popular Categories'></div>
-      
-      <hr></hr>
-      <div className="our-blog-section">
-        <h1 className="blog-heading">Our Blog</h1>
-        <h2 className="blog-subheading">See how you can up your career status</h2>
-
-        <div className="blog-cards">
-          <div className="blog-card">
-            <img src={img1} alt="Blog 1" />
-            <h3>Blog Post Title 1</h3>
-            <p>A short description of Blog Post 1. Learn more about how to advance your career with these tips.</p>
-            <button className="read-more-btn">Read More</button>
-          </div>
-          <div className="blog-card">
-            <img src={img2} alt="Blog 2" />
-            <h3>Blog Post Title 2</h3>
-            <p>A short description of Blog Post 2. Discover new ways to improve your job search strategies.</p>
-            <button className="read-more-btn">Read More</button>
-          </div>
-          <div className="blog-card">
-            <img src={img1} alt="Blog 3" />
-            <h3>Blog Post Title 3</h3>
-            <p>A short description of Blog Post 3. Enhance your career prospects with these proven methods.</p>
-            <button className="read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 };
