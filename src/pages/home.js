@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../sass/home.scss';
 import '../sass/popularcategories.scss';
 import '../css/home.css';
@@ -6,9 +6,6 @@ import qmImage from '../assets/home/qm.png';
 import img1 from '../assets/home/img1.jpg';
 import img2 from '../assets/home/img2.jpg';
 import bgg from '../assets/home/bgg.png';
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const categories = [
   { name: "accounting", link: "/popularcategories/accounting" },
@@ -22,25 +19,45 @@ const categories = [
 ];
 
 const Home = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const totalReviews = 6; // Total number of reviews
-  const reviewsToShow = 3; // Number of reviews to display at once
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? totalReviews - reviewsToShow : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === totalReviews - reviewsToShow ? 0 : prevIndex + 1
-    );
+  const handleCategoryChange = (event) => {
+    const selectedCategory = event.target.value;
+    // Use the selectedCategory value for further actions
+    console.log('Selected Category:', selectedCategory);
+    // You can navigate or use the selected value in any way you want here
   };
 
   return (
     <div className='home-page'>
-     
+      <div className="search-container">
+        <div className="search-left">
+          <h1>Find the right fit</h1>
+          <p>Hire Experts or be hired in sales & marketing</p>
+          <div className="search-bar">
+            <input type="text" placeholder="Job Title" />
+            <input type="text" placeholder="Location" />
+            <select onChange={handleCategoryChange}>
+              <option value="">All Categories</option>
+              {categories.map((category, index) => (
+                <option key={index} value={category.name}>{category.name}</option>
+              ))}
+            </select>
+            <button className="search-button">Search</button>
+          </div>
+          <a href="/" className="advanced-search">Need more search options? Advanced Search</a>
+        </div>
+        <div className="search-right">
+          <h2>Post a job and hire a pro!</h2>
+          <p>We’re ready to work with you to help you reach your hiring goals.</p>
+          <button className="get-started-btn">Let’s Get Started</button>
+        </div>
+      </div>
+      <div className="category-buttons">
+        <button className="category-btn">Automotive Jobs</button>
+        <button className="category-btn">Design, Art & Multimedia</button>
+        <button className="category-btn">Healthcare</button>
+      </div>
+      
     </div>
   );
 };
