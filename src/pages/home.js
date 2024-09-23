@@ -2,10 +2,11 @@ import React from 'react';
 import '../sass/home.scss';
 import '../sass/popularcategories.scss';
 import '../css/home.css';
-import qmImage from '../assets/home/qm.png';
-import img1 from '../assets/home/img1.jpg';
-import img2 from '../assets/home/img2.jpg';
-import bgg from '../assets/home/bgg.png';
+
+import networkIcon from '../assets/home/tech-icon-network.svg';
+import screeningIcon from '../assets/home/tech-icon-screening.svg';
+import timezoneIcon from '../assets/home/tech-icon-timezone.svg';
+import readinessIcon from '../assets/home/tech-icon-readiness.svg';
 
 const categories = [
   { name: "accounting", link: "/popularcategories/accounting" },
@@ -57,7 +58,27 @@ const Home = () => {
         <button className="category-btn">Design, Art & Multimedia</button>
         <button className="category-btn">Healthcare</button>
       </div>
-      
+      <div className='indiatop'>
+        <h2>India’s top tech and digital talents</h2>
+        <div className="card-container">
+          <div className="card">
+            <img src={networkIcon} alt="Network Icon" />
+            <p>Network of 1 Million talents</p>
+          </div>
+          <div className="card">
+            <img src={screeningIcon} alt="Screening Icon" />
+            <p>Top 3.5% of Indian talents vetted through in-depth AI-enabled screening</p>
+          </div>
+          <div className="card">
+            <img src={timezoneIcon} alt="Timezone Icon" />
+            <p>Talents available to work in all time zones</p>
+          </div>
+          <div className="card">
+            <img src={readinessIcon} alt="Readiness Icon" />
+            <p>Technical Proficiency, English language skills, Cross-cultural effectiveness, Remote readiness</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
