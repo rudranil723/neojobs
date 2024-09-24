@@ -8,6 +8,22 @@ import screeningIcon from '../assets/home/tech-icon-screening.svg';
 import timezoneIcon from '../assets/home/tech-icon-timezone.svg';
 import readinessIcon from '../assets/home/tech-icon-readiness.svg';
 
+import foodImage from '../assets/home/food.jpg';
+import healthcareImage from '../assets/home/healthcare.jpg';
+import prImage from '../assets/home/PR.jpg';
+import statsImage from '../assets/home/stats.jpg';
+import uiuxImage from '../assets/home/uiux.jpg';
+import actimage from '../assets/home/act.jpg';
+
+const popularCategoriesData = [
+  { name: "Food & Beverage", image: foodImage, link: "/jobs", listings: 120 },
+  { name: "Healthcare", image: healthcareImage, link: "/jobs", listings: 95 },
+  { name: "PR & Marketing", image: prImage, link: "/jobs", listings: 80 },
+  { name: "Data & Analytics", image: statsImage, link: "/jobs", listings: 60 },
+  { name: "UI/UX Design", image: uiuxImage, link: "/jobs", listings: 45 },
+  { name: "Accounting", image: actimage, link: "/jobs", listings: 110 },
+];
+
 const categories = [
   { name: "accounting", link: "/popularcategories/accounting" },
   { name: "automotive", link: "/popularcategories/automotive" },
@@ -77,6 +93,23 @@ const Home = () => {
             <img src={readinessIcon} alt="Readiness Icon" />
             <p>Technical Proficiency, English language skills, Cross-cultural effectiveness, Remote readiness</p>
           </div>
+        </div>
+      </div>
+      <div className="popularcategories">
+        <h2>Explore Popular Categories</h2>
+        <div className="category-cards">
+          {popularCategoriesData.map((category, index) => (
+            <a key={index} href={category.link} className="category-card">
+              <div className="category-image">
+                <img src={category.image} alt={`${category.name} category`} />
+              </div>
+              <div className="category-overlay"></div>
+              <div className="category-name">
+                <h3>{category.name}</h3>
+                <p>{category.listings} listings</p>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </div>
