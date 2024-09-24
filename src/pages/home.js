@@ -1,6 +1,5 @@
 import React from 'react';
 import '../sass/home.scss';
-import '../sass/popularcategories.scss';
 import '../css/home.css';
 
 import networkIcon from '../assets/home/tech-icon-network.svg';
@@ -14,6 +13,8 @@ import prImage from '../assets/home/PR.jpg';
 import statsImage from '../assets/home/stats.jpg';
 import uiuxImage from '../assets/home/uiux.jpg';
 import actimage from '../assets/home/act.jpg';
+
+import officeimage from '../assets/home/office.jpg';
 
 const popularCategoriesData = [
   { name: "Food & Beverage", image: foodImage, link: "/jobs", listings: 120 },
@@ -110,6 +111,21 @@ const Home = () => {
               </div>
             </a>
           ))}
+        </div>
+      </div>
+      <div className='brousecompany'>
+        <button>
+        Browse Companies
+        </button>
+      </div>
+      <div className="enhancebussiness" style={{marginTop: "5%"}}>
+        <div className="overlay">
+          <img src={officeimage} alt="Office" />
+          <div className="content">
+            <h2>Enhance Your Business</h2>
+            <p>Earn extra income and unlock new opportunities by advertising your company</p>
+            <a href="F:/NEOJOBS/neojobs/src/components/getstarted.js" className="get-started-btn">Get Started</a>
+          </div>
         </div>
       </div>
     </div>
