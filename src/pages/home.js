@@ -16,6 +16,11 @@ import actimage from '../assets/home/act.jpg';
 
 import officeimage from '../assets/home/office.jpg';
 
+import mumbaiimage from '../assets/home/mumbai.jpg';
+import bengaimage from '../assets/home/benga.jpg';
+import hydimage from '../assets/home/hyd.jpg';
+import guruimage from '../assets/home/guru.jpg';
+
 const popularCategoriesData = [
   { name: "Food & Beverage", image: foodImage, link: "/jobs", listings: 120 },
   { name: "Healthcare", image: healthcareImage, link: "/jobs", listings: 95 },
@@ -128,6 +133,42 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="popularcity-section">
+      <div className="heading">
+        <h2>Popular Cities</h2>
+        <p>Browse job offers by popular locations</p>
+      </div>
+      <div className="popularcity-container">
+        <div className="city-box large">
+          <img src={mumbaiimage} alt="Mumbai" className="city-image" />
+          <div className="city-info">
+            <div className="city-name">Mumbai</div>
+            <div className="city-listings">80 listings</div>
+          </div>
+        </div>
+        <div className="city-box small">
+          <img src={bengaimage} alt="Bengaluru" className="city-image" />
+          <div className="city-info">
+            <div className="city-name">Bengaluru</div>
+            <div className="city-listings">123 listings</div>
+          </div>
+        </div>
+        <div className="city-box small">
+          <img src={hydimage} alt="Hyderabad" className="city-image" />
+          <div className="city-info">
+            <div className="city-name">Mumbai</div>
+            <div className="city-listings">51 listings</div>
+          </div>
+        </div>
+        <div className="city-box large">
+          <img src={guruimage} alt="Gurugram" className="city-image" />
+          <div className="city-info">
+            <div className="city-name">Gurugram</div>
+            <div className="city-listings">66 listings</div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
