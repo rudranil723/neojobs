@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import '../sass/home.scss';
 import '../css/home.css';
 
@@ -20,6 +20,32 @@ import mumbaiimage from '../assets/home/mumbai.jpg';
 import bengaimage from '../assets/home/benga.jpg';
 import hydimage from '../assets/home/hyd.jpg';
 import guruimage from '../assets/home/guru.jpg';
+
+import oneimage from "../assets/home/freelancerfaces/1.webp";
+import twoimage from "../assets/home/freelancerfaces/2.webp";
+import threeimage from "../assets/home/freelancerfaces/3.webp";
+import fourimage from "../assets/home/freelancerfaces/4.webp";
+import fiveimage from "../assets/home/freelancerfaces/5.webp";
+import siximage from "../assets/home/freelancerfaces/6.webp";
+import sevenimage from "../assets/home/freelancerfaces/7.webp";
+import eightimage from "../assets/home/freelancerfaces/8.webp";
+import nineimage from "../assets/home/freelancerfaces/9.webp";
+import tenimage from "../assets/home/freelancerfaces/10.jpeg";
+
+
+const images = [
+  { src: oneimage, name: "XYZ 1", job: "Freelancer" },
+  { src: twoimage, name: "XYZ 2", job: "Intern" },
+  { src: threeimage, name: "XYZ 3", job: "SEO" },
+  { src: fourimage, name: "XYZ 4", job: "Freelancer" },
+  { src: fiveimage, name: "XYZ 5", job: "SEO" },
+  { src: siximage, name: "XYZ 6", job: "Freelancer" },
+  { src: sevenimage, name: "XYZ 7", job: "SEO" },
+  { src: eightimage, name: "XYZ 8", job: "Freelancer" },
+  { src: nineimage, name: "XYZ 9", job: "Intern" },
+  { src: tenimage, name: "XYZ 10", job: "Freelancer" },
+];
+
 
 const popularCategoriesData = [
   { name: "Food & Beverage", image: foodImage, link: "/jobs", listings: 120 },
@@ -49,6 +75,20 @@ const Home = () => {
     console.log('Selected Category:', selectedCategory);
     // You can navigate or use the selected value in any way you want here
   };
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const imageCount = images.length;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === imageCount - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, [imageCount]);
+
 
   return (
     <div className='home-page'>
@@ -123,6 +163,23 @@ const Home = () => {
         Browse Companies
         </button>
       </div>
+
+      <div className="freelancerfaces">
+        <div className="faces-slider">
+          {images.map((image, index) => (
+            <div key={index} className="freelancer-slide">
+              <img src={image.src} alt={image.name} />
+              <div className="freelancer-info">
+                <p className="freelancer-name">{image.name}</p>
+                <p className="freelancer-job">{image.job}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+
       <div className="enhancebussiness" style={{marginTop: "5%"}}>
         <div className="overlay">
           <img src={officeimage} alt="Office" />

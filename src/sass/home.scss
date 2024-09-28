@@ -427,5 +427,86 @@ body {
   }
 }
 
+.freelancerfaces {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  font-family: $font-stack;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: $primary-color; // Using your primary color
+  }
+
+  .faces-slider {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: slide 20s linear infinite;
+    width: max-content; // Makes the slider width fit its content
+    padding-left: 100%; // Start from outside the visible area to make the loop seamless
+
+    .freelancer-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 15px;
+      transition: transform 0.3s ease;
+
+      img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10%;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .freelancer-info {
+        text-align: center;
+
+        .freelancer-name {
+          font-size: 16px;
+          font-weight: bold;
+          color: $primary-color; // Using your primary color
+        }
+
+        .freelancer-job {
+          font-size: 14px;
+          color: $secondary-color; // Using your secondary color
+        }
+      }
+    }
+  }
+}
+
+// Keyframes for continuous loop effect
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); // Shift all items left to complete a loop
+  }
+}
+
+// Optional: Media query for smaller screens
+@media (max-width: 768px) {
+  .freelancerfaces {
+    .faces-slider {
+      .freelancer-slide {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
 }
 

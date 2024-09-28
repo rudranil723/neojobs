@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import JobsPage from './pages/jobs'; 
+import CompaniesPage from './pages/companies';
 import JobProfilePage from './pages/jobprofilepage/jobprofile';
 import FreelancerPage from './pages/freelancer';
 import Skills from './freelancer/byskills'; 
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/jobs" element={<JobsPage />} />
+        <Route path="/companies" element={<CompaniesPage />} />
         <Route path="/jobs/:id" element={<JobProfilePage />} /> 
         <Route path="/freelancers" element={<FreelancerPage />} />
         <Route path="/freelancer/byskills" element={<Skills />} /> 
