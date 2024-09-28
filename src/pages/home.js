@@ -31,6 +31,9 @@ import sevenimage from "../assets/home/freelancerfaces/7.webp";
 import eightimage from "../assets/home/freelancerfaces/8.webp";
 import nineimage from "../assets/home/freelancerfaces/9.webp";
 import tenimage from "../assets/home/freelancerfaces/10.jpeg";
+import eleveimage from "../assets/home/freelancerfaces/11.jpg";
+import thirtenimage from "../assets/home/freelancerfaces/13.jpg";
+import fortenimage from "../assets/home/freelancerfaces/14.jpg";
 
 
 const images = [
@@ -44,6 +47,9 @@ const images = [
   { src: eightimage, name: "XYZ 8", job: "Freelancer" },
   { src: nineimage, name: "XYZ 9", job: "Intern" },
   { src: tenimage, name: "XYZ 10", job: "Freelancer" },
+  { src: eleveimage, name: "XYZ 11", job: "Intern" },
+  { src: thirtenimage, name: "XYZ 12", job: "Freelancer" },
+  { src: fortenimage, name: "XYZ 13", job: "Intern" },
 ];
 
 

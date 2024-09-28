@@ -110,22 +110,4 @@ body {
         }
       }
     }
-  
-    .jobs-map {
-      h2 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-      }
-  
-      #map-container {
-        width: 100%;
-        height: 660px;
-        iframe {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-        }
-      }
-    }
-  }
-  
+}

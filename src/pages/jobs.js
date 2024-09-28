@@ -76,24 +76,10 @@ const JobsPage = () => {
             type="Internship"
             id="2"
           />
-          {/* Additional job cards */}
         </div>
       </div>
 
-      <div className="jobs-map">
-        <h2>Job Locations</h2>
-        <div id="map-container">
-          <iframe
-            title="India Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15921724.330819353!2d70.57928355973683!3d20.74800097962157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bf03fc1aee2792d%3A0x3679f9b71e3db500!2sIndia!5e0!3m2!1sen!2sin!4v1631681457825!5m2!1sen!2sin"
-            width="100%"
-            height="400px"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </div>
+     
     </div>
   );
 };
