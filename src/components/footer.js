@@ -33,16 +33,7 @@ const Footer = () => {
               <li><Link to="#">Job Packages</Link></li>
             </ul>
           </div>
-          <div className="footer-column">
-            <h4>Other</h4>
-            <ul>
-              <li><Link to="#">Job Page</Link></li>
-              <li><Link to="#">Task Page</Link></li>
-              <li><Link to="#">Resume Page</Link></li>
-              <li><Link to="#">Blog</Link></li>
-              <li><Link to="#">Contact</Link></li>
-            </ul>
-          </div>
+          
           <div className="footer-column">
             <h4>Legal</h4>
             <ul>
