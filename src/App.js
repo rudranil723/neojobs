@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import JobsPage from './pages/jobs'; 
+import HackathonPage from './pages/hackathon'; 
 import CompaniesPage from './pages/companies';
 import JobProfilePage from './pages/jobprofilepage/jobprofile';
 import FreelancerPage from './pages/freelancer';
@@ -18,6 +19,7 @@ import Login from './components/login';
 import Register from './components/register';  
 import GetStarted from './components/getstarted';
 
+
 function App() {
   return (
     <Router>
@@ -25,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/jobs" element={<JobsPage />} />
+        <Route path="/hackathon" element={<HackathonPage />} />
         <Route path="/companies" element={<CompaniesPage />} />
         <Route path="/jobs/:id" element={<JobProfilePage />} /> 
         <Route path="/freelancers" element={<FreelancerPage />} />
