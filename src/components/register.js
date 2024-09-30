@@ -1,14 +1,10 @@
 import React from 'react';
 import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa';  // Importing icons
-import './register.scss';  // Import the SCSS file
+import './register.scss';  
 
 const Register = () => {
     return (
         <div className="register-container">
-            {/* <div className="register-header">
-                <button>Login</button>
-                <button className="active">Register</button>
-            </div> */}
             <div className="button-group">
                 <button className="candidate active">Candidate</button>
                 <button className="employer">Employer</button>
