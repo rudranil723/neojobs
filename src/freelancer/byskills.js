@@ -44,8 +44,123 @@ const Skills = () => {
                             </ul>
                         )}
                     </li>
-                    {/* Other menu items */}
-                    {/* ... */}
+                    <li
+                        onMouseEnter={() => handleMouseEnter('writing')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Writing & Translation
+                        {activeMenu === 'writing' && (
+                            <ul className="dropdown-menu">
+                                <li>Copywriting</li>
+                                <li>Content Writing</li>
+                                <li>Translation</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('programming')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Programming & Tech
+                        {activeMenu === 'programming' && (
+                            <ul className="dropdown-menu">
+                                <li>Web Development</li>
+                                <li>Mobile App Development</li>
+                                <li>Software Development</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('digitalMarketing')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Digital Marketing
+                        {activeMenu === 'digitalMarketing' && (
+                            <ul className="dropdown-menu">
+                                <li>SEO</li>
+                                <li>Social Media Marketing</li>
+                                <li>Email Marketing</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('videoAnimation')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Video & Animation
+                        {activeMenu === 'videoAnimation' && (
+                            <ul className="dropdown-menu">
+                                <li>Video Editing</li>
+                                <li>Animation</li>
+                                <li>3D Animation</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('voiceAudio')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Voice & Audio
+                        {activeMenu === 'voiceAudio' && (
+                            <ul className="dropdown-menu">
+                                <li>Voice Over</li>
+                                <li>Podcast Editing</li>
+                                <li>Music Production</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('business')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Business
+                        {activeMenu === 'business' && (
+                            <ul className="dropdown-menu">
+                                <li>Business Consulting</li>
+                                <li>Project Management</li>
+                                <li>Virtual Assistant</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('finance')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Finance
+                        {activeMenu === 'finance' && (
+                            <ul className="dropdown-menu">
+                                <li>Financial Consulting</li>
+                                <li>Accounting</li>
+                                <li>Tax Preparation</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('data')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        Data
+                        {activeMenu === 'data' && (
+                            <ul className="dropdown-menu">
+                                <li>Data Analysis</li>
+                                <li>Data Entry</li>
+                                <li>Data Visualization</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        onMouseEnter={() => handleMouseEnter('aiServices')}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        AI Services
+                        {activeMenu === 'aiServices' && (
+                            <ul className="dropdown-menu">
+                                <li>AI Development</li>
+                                <li>Chatbot Development</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        )}
+                    </li>
                 </ul>
             </div>
 

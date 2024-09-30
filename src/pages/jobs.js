@@ -8,11 +8,7 @@ import logo2 from '../assets/jobs/company-logo-03-150x150.webp';
 const JobsPage = () => {
   return (
     <div className="jobs-container">
-      {/* Top Section */}
-      <div className="top-section">
-        <h1>Find Jobs</h1>
-        <p>Looking for jobs? Browse our latest job openings to view & apply to the best jobs today!</p>
-      </div>
+     
 
       {/* Filter and Jobs Section */}
       <div className="content-section">
