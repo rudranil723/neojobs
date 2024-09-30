@@ -20,18 +20,16 @@ const Location = () => {
                 <div className="location-list">
                     <h2>Choose from millions of freelancers worldwide.</h2>
                     <ul>
-                        <li>United States</li>
-                        <li>United Kingdom</li>
-                        <li>Canada</li>
-                        <li>India</li>
-                        <li>Australia</li>
-                        <li>Pakistan</li>
-                        <li>Bangladesh</li>
-                        <li>Indonesia</li>
-                        <li>Brazil</li>
-                        <li>China</li>
-                        <li>Turkey</li>
-                        <li>Philippines</li>
+                        <li>Bengaluru</li>
+                        <li>Hyderabad</li>
+                        <li>Pune</li>
+                        <li>Chennai</li>
+                        <li>Delhi NCR</li>
+                        <li>Mumbai</li>
+                        <li>Kolkata</li>
+                        <li>Ahmedabad</li>
+                        <li>Jaipur</li>
+                        <li>Indore</li>
                         <li className="view-more">View more &gt;</li>
                     </ul>
                 </div>
