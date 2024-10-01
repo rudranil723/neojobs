@@ -66,12 +66,12 @@ const popularCategoriesData = [
 const categories = [
   { name: "accounting", link: "/popularcategories/accounting" },
   { name: "automotive", link: "/popularcategories/automotive" },
-  { name: "Category 3", link: "/category3" },
-  { name: "Category 4", link: "/category4" },
-  { name: "Category 5", link: "/category5" },
-  { name: "Category 6", link: "/category6" },
-  { name: "Category 7", link: "/category7" },
-  { name: "Category 8", link: "/category8" },
+  { name: "UI&UX", link: "/category3" },
+  { name: "AIML", link: "/category4" },
+  { name: "graphic designing", link: "/category5" },
+  { name: "SEO", link: "/category6" },
+  { name: "Marketing", link: "/category7" },
+  { name: "Devloper", link: "/category8" },
 ];
 
 const Home = () => {
