@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../sass/home.scss';
 import '../css/home.css';
+import { useNavigate } from 'react-router-dom';
 
 import networkIcon from '../assets/home/tech-icon-network.svg';
 import screeningIcon from '../assets/home/tech-icon-screening.svg';
@@ -74,6 +75,7 @@ const categories = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate(); 
 
   const handleCategoryChange = (event) => {
     const selectedCategory = event.target.value;
@@ -95,6 +97,10 @@ const Home = () => {
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [imageCount]);
 
+  const handleGetStartedClick = () => {
+    console.log('Get Started button clicked');
+    navigate('/freelancerprofile');  // Navigate to freelancer profile page
+  };
 
   return (
     <div className='home-page'>
@@ -232,6 +238,11 @@ const Home = () => {
         </div>
       </div>
     </div>
+      <div className="get-started-container">
+          <button className="get-started-button" onClick={handleGetStartedClick}>
+              Get Started
+          </button>
+      </div>
     </div>
   );
 };
