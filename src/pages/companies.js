@@ -10,7 +10,7 @@ const CompaniesPage = () => {
     return (
         <div className="jobs-container">
           <div className="jobs-list">
-            <h2>Find Job</h2>
+            <h2>Find Company</h2>
             <div className="job-filters">
               <input type="text" placeholder="Job title, keywords or company name" />
               <input type="text" placeholder="Location" />
@@ -25,7 +25,7 @@ const CompaniesPage = () => {
             <div className="job-cards">
               <JobCard 
                 logo={logo1} 
-                title="Restaurant Dishwasher" 
+                title="Tesla" 
                 company="King" 
                 location="London, UK" 
                 salary="$55,000.00 - $70,000.00"
@@ -34,7 +34,7 @@ const CompaniesPage = () => {
               />
               <JobCard 
                 logo={logo2} 
-                title="Grader Operator" 
+                title="Burger king" 
                 company="Moore & Kavinsky" 
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
@@ -43,7 +43,7 @@ const CompaniesPage = () => {
               />
               <JobCard 
                 logo={logo2} 
-                title="Grader Operator" 
+                title="Burger King" 
                 company="Moore & Kavinsky" 
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
@@ -52,7 +52,7 @@ const CompaniesPage = () => {
               />
               <JobCard 
                 logo={logo2} 
-                title="Grader Operator" 
+                title="KFC" 
                 company="Moore & Kavinsky" 
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
@@ -61,7 +61,7 @@ const CompaniesPage = () => {
               />
               <JobCard 
                 logo={logo2} 
-                title="Grader Operator" 
+                title="Apple" 
                 company="Moore & Kavinsky" 
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
@@ -70,7 +70,7 @@ const CompaniesPage = () => {
               />
               <JobCard 
                 logo={logo2} 
-                title="Grader Operator" 
+                title="Google" 
                 company="Moore & Kavinsky" 
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
