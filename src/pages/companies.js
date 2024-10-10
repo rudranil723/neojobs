@@ -5,7 +5,6 @@ import { FaMapMarkerAlt, FaDollarSign } from 'react-icons/fa';
 import logo1 from '../assets/jobs/company-logo-06-150x150.webp';
 import logo2 from '../assets/jobs/company-logo-03-150x150.webp';
 
-
 const CompaniesPage = () => {
     return (
         <div className="jobs-container">
@@ -34,15 +33,6 @@ const CompaniesPage = () => {
               />
               <JobCard 
                 logo={logo2} 
-                title="Burger king" 
-                company="Moore & Kavinsky" 
-                location="Munich, Germany" 
-                salary="$35,000.00 - $38,000.00"
-                type="Internship"
-                id="2"
-              />
-              <JobCard 
-                logo={logo2} 
                 title="Burger King" 
                 company="Moore & Kavinsky" 
                 location="Munich, Germany" 
@@ -57,7 +47,7 @@ const CompaniesPage = () => {
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
                 type="Internship"
-                id="2"
+                id="3"
               />
               <JobCard 
                 logo={logo2} 
@@ -66,7 +56,7 @@ const CompaniesPage = () => {
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
                 type="Internship"
-                id="2"
+                id="4"
               />
               <JobCard 
                 logo={logo2} 
@@ -75,9 +65,17 @@ const CompaniesPage = () => {
                 location="Munich, Germany" 
                 salary="$35,000.00 - $38,000.00"
                 type="Internship"
-                id="2"
+                id="5"
               />
-              {/* Additional job cards */}
+              <JobCard 
+                logo={logo2} 
+                title="microsoft" 
+                company="Moore & Kavinsky" 
+                location="Munich, Germany" 
+                salary="$35,000.00 - $38,000.00"
+                type="Internship"
+                id="5"
+              />
             </div>
           </div>
     
@@ -99,30 +97,27 @@ const CompaniesPage = () => {
       );
     };
 
-
-
-    const JobCard = ({ logo, title, company, location, salary, type, id }) => {
-        const navigate = useNavigate(); // Use useNavigate hook
-      
-        const handleCardClick = () => {
-          navigate(`/jobs/${id}`); // Navigate to JobProfilePage with id
-        };
-      
-        return (
-          <div className="job-card" onClick={handleCardClick}> {/* Make the card clickable */}
-            <img src={logo} alt={company} className="job-logo" />
-            <div className="job-details">
-              <h3>{title}</h3>
-              <p>{company}</p>
-              <div className="job-meta">
-                <span><FaMapMarkerAlt /> {location}</span>
-                <span><FaDollarSign /> {salary}</span>
-              </div>
-              <span className={`job-type ${type.replace(' ', '-').toLowerCase()}`}>{type}</span>
-            </div>
+const JobCard = ({ logo, title, company, location, salary, type, id }) => {
+    const navigate = useNavigate(); // Use useNavigate hook
+  
+    const handleCardClick = () => {
+      navigate(`/company/${id}`); // Navigate to the company page with the company's ID
+    };
+  
+    return (
+      <div className="job-card" onClick={handleCardClick}> {/* Make the card clickable */}
+        <img src={logo} alt={company} className="job-logo" />
+        <div className="job-details">
+          <h3>{title}</h3>
+          <p>{company}</p>
+          <div className="job-meta">
+            <span><FaMapMarkerAlt /> {location}</span>
+            <span><FaDollarSign /> {salary}</span>
           </div>
-        );
-      };
-      
-      export default CompaniesPage;
-      
+          <span className={`job-type ${type.replace(' ', '-').toLowerCase()}`}>{type}</span>
+        </div>
+      </div>
+    );
+};
+
+export default CompaniesPage;
