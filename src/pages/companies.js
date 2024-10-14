@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import '../sass/companies.scss';
 import { FaMapMarkerAlt, FaDollarSign } from 'react-icons/fa';
 import logo1 from '../assets/jobs/company-logo-06-150x150.webp';
-import logo2 from '../assets/jobs/company-logo-03-150x150.webp';
 import logo3 from '../assets/companies/logo1.jpg';
 import logo4 from '../assets/companies/logo2.jpg';
 import logo5 from '../assets/companies/logo3.jpg';
