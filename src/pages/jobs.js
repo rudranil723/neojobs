@@ -8,6 +8,11 @@ import logo2 from '../assets/jobs/company-logo-03-150x150.webp';
 const JobsPage = () => {
   const navigate = useNavigate();
 
+  // Function to handle job card click
+  const handleJobClick = (jobId) => {
+    navigate(`/jobs/${jobId}`);
+  };
+
   return (
     <div className="jobs-page">
       <div className="top-section">
@@ -95,7 +100,7 @@ const JobsPage = () => {
             <p>250 Jobs results</p>
 
             {/* Job Card 1 */}
-            <div className="job-card">
+            <div className="job-card" onClick={handleJobClick}>
               <img src={logo1} alt="Company Logo 1" className="company-logo" />
               <div className="job-details">
                 <h3>Product Designer <span className="urgently-hiring">Urgently hiring</span></h3>
@@ -108,7 +113,7 @@ const JobsPage = () => {
             </div>
 
             {/* Job Card 2 */}
-            <div className="job-card">
+            <div className="job-card" onClick={handleJobClick}>
               <img src={logo2} alt="Company Logo 2" className="company-logo" />
               <div className="job-details">
                 <h3>Copywriting Specialist</h3>
@@ -122,7 +127,9 @@ const JobsPage = () => {
                 <p>Collaborate with the marketing team to optimize conversion and develop persuasive copy.</p>
               </div>
             </div>
-            <div className="job-card">
+
+            {/* Additional Job Cards */}
+            <div className="job-card" onClick={handleJobClick}>
               <img src={logo2} alt="Company Logo 2" className="company-logo" />
               <div className="job-details">
                 <h3>Copywriting Specialist</h3>
@@ -136,7 +143,8 @@ const JobsPage = () => {
                 <p>Collaborate with the marketing team to optimize conversion and develop persuasive copy.</p>
               </div>
             </div>
-            <div className="job-card">
+
+            <div className="job-card" onClick={handleJobClick}>
               <img src={logo2} alt="Company Logo 2" className="company-logo" />
               <div className="job-details">
                 <h3>Copywriting Specialist</h3>
@@ -155,6 +163,6 @@ const JobsPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default JobsPage;

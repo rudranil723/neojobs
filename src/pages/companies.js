@@ -4,6 +4,11 @@ import '../sass/companies.scss';
 import { FaMapMarkerAlt, FaDollarSign } from 'react-icons/fa';
 import logo1 from '../assets/jobs/company-logo-06-150x150.webp';
 import logo2 from '../assets/jobs/company-logo-03-150x150.webp';
+import logo3 from '../assets/companies/logo1.jpg';
+import logo4 from '../assets/companies/logo2.jpg';
+import logo5 from '../assets/companies/logo3.jpg';
+import logo6 from '../assets/companies/logo4.jpg';
+import logo7 from '../assets/companies/logo5.jpg';
 
 const CompaniesPage = () => {
     return (
@@ -25,55 +30,55 @@ const CompaniesPage = () => {
               <JobCard 
                 logo={logo1} 
                 title="Tesla" 
-                company="King" 
+                company="SDE" 
                 location="London, UK" 
-                salary="$55,000.00 - $70,000.00"
+                salary="$55,00.00 - $70,00.00"
                 type="Full Time"
                 id="1"
               />
               <JobCard 
-                logo={logo2} 
+                logo={logo3} 
                 title="Burger King" 
-                company="Moore & Kavinsky" 
-                location="Munich, Germany" 
-                salary="$35,000.00 - $38,000.00"
+                company="APP DEVLOPER" 
+                location="LA, USA" 
+                salary="$35,00.00 - $38,00.00"
                 type="Internship"
                 id="2"
               />
               <JobCard 
-                logo={logo2} 
+                logo={logo4} 
                 title="KFC" 
-                company="Moore & Kavinsky" 
-                location="Munich, Germany" 
-                salary="$35,000.00 - $38,000.00"
+                company="HR" 
+                location="CHINA" 
+                salary="$35,00.00 - $38,00.00"
                 type="Internship"
                 id="3"
               />
               <JobCard 
-                logo={logo2} 
+                logo={logo5} 
                 title="Apple" 
-                company="Moore & Kavinsky" 
+                company="DATA ANALIST" 
                 location="Munich, Germany" 
-                salary="$35,000.00 - $38,000.00"
-                type="Internship"
+                salary="$45,00.00 - $38,00.00"
+                type="Full-time"
                 id="4"
               />
               <JobCard 
-                logo={logo2} 
+                logo={logo6} 
                 title="Google" 
-                company="Moore & Kavinsky" 
-                location="Munich, Germany" 
-                salary="$35,000.00 - $38,000.00"
+                company="SDE" 
+                location="NYC, USA" 
+                salary="$35,00.00 - $30,00.00"
                 type="Internship"
                 id="5"
               />
               <JobCard 
-                logo={logo2} 
-                title="microsoft" 
-                company="Moore & Kavinsky" 
-                location="Munich, Germany" 
-                salary="$35,000.00 - $38,000.00"
-                type="Internship"
+                logo={logo7} 
+                title="Microsoft" 
+                company="Front-end devloper" 
+                location="Mumbai, India" 
+                salary="$45,00.00 - $30,00.00"
+                type="Full-time"
                 id="5"
               />
             </div>
