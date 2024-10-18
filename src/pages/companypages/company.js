@@ -42,8 +42,8 @@ const CompanyPage = () => {
         additionalImages: [logo1, logo1], // Using logo1 for additional images
     },
     4: {
-        name: 'Amazon',
-        description: 'Amazon is a multinational technology company focusing on e-commerce, cloud computing, and artificial intelligence.',
+        name: 'Apple',
+        description: 'Apple is a multinational technology company focusing on e-commerce, cloud computing, and artificial intelligence.',
         location: 'Seattle, WA, USA',
         jobsAvailable: 10,
         logo: logo1, // Using logo1 for all logos

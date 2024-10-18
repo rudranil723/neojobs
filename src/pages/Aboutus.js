@@ -95,6 +95,30 @@ const Aboutus = () => {
                 </div>
                 <hr className="team-divider" />
             </div>
+            <div className="join-team">
+                <div className="join-team-text">
+                    <h2>Join Our Team</h2>
+                    <p>
+                        We are always on the lookout for passionate individuals who want to make a difference. 
+                        Come and be a part of our growing family.
+                    </p>
+                    <a href="#" className="open-positions-link">See Open Positions</a>
+                </div>
+            </div>
+
+            {/* New Section - Employee Spotlight */}
+            <div className="employee-spotlight">
+                <div className="spotlight-content">
+                    <img src={employee4} alt="Employee Spotlight" />
+                    <div className="spotlight-text">
+                        <p>
+                            “Working at this company has been an incredible journey of growth and learning. 
+                            The collaborative environment encourages us to push boundaries and achieve excellence.”
+                        </p>
+                        <button onClick={() => window.location.href='/contact'}>Contact Us</button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

@@ -31,7 +31,7 @@ const CompaniesPage = () => {
                 title="Tesla" 
                 company="SDE" 
                 location="London, UK" 
-                salary="$55,00.00 - $70,00.00"
+                
                 type="Full Time"
                 id="1"
               />
@@ -40,7 +40,7 @@ const CompaniesPage = () => {
                 title="Burger King" 
                 company="APP DEVLOPER" 
                 location="LA, USA" 
-                salary="$35,00.00 - $38,00.00"
+               
                 type="Internship"
                 id="2"
               />
@@ -49,7 +49,7 @@ const CompaniesPage = () => {
                 title="KFC" 
                 company="HR" 
                 location="CHINA" 
-                salary="$35,00.00 - $38,00.00"
+                
                 type="Internship"
                 id="3"
               />
@@ -58,7 +58,7 @@ const CompaniesPage = () => {
                 title="Apple" 
                 company="DATA ANALIST" 
                 location="Munich, Germany" 
-                salary="$45,00.00 - $38,00.00"
+                
                 type="Full-time"
                 id="4"
               />
@@ -67,7 +67,7 @@ const CompaniesPage = () => {
                 title="Google" 
                 company="SDE" 
                 location="NYC, USA" 
-                salary="$35,00.00 - $30,00.00"
+                
                 type="Internship"
                 id="5"
               />
@@ -76,7 +76,7 @@ const CompaniesPage = () => {
                 title="Microsoft" 
                 company="Front-end devloper" 
                 location="Mumbai, India" 
-                salary="$45,00.00 - $30,00.00"
+                
                 type="Full-time"
                 id="5"
               />

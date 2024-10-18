@@ -195,4 +195,82 @@
   }
 }
 
+// Join Our Team Section
+.join-team {
+    background-color: $secondary-color;
+    padding: 4rem 0;
+    text-align: center;
+    color: $white;
+    margin-top: 6rem;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .open-positions-link {
+        font-size: 1.25rem;
+        color: $white;
+        text-decoration: underline;
+        transition: color 0.3s;
+
+        &:hover {
+            color: lighten($secondary-color, 20%);
+        }
+    }
+}
+
+// Employee Spotlight Section
+.employee-spotlight {
+    background-color: $white;
+    padding: 4rem 0;
+    margin-top: 6rem;
+    .spotlight-content {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 2rem;
+
+        img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .spotlight-text {
+            flex: 1;
+
+            p {
+                font-size: 1.5rem;
+                line-height: 1.6;
+                color: $dark-grey;
+                margin-bottom: 1.5rem;
+            }
+
+            button {
+                font-size: 1.25rem;
+                background-color: $primary-color;
+                color: $white;
+                padding: 0.75rem 1.5rem;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                }
+            }
+        }
+    }
+}
+
 }
