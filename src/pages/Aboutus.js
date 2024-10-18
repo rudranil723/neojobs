@@ -1,113 +1,106 @@
 import React from 'react';
 import '../sass/aboutus.scss';
-import { Link } from 'react-router-dom';
+import officeimg from '../assets/aboutus/office.jpg';
+import ceoImage from '../assets/aboutus/ceo.jpg';
+import employee1 from '../assets/aboutus/em1.jpeg';
+import employee2 from '../assets/aboutus/em2.jpg';
+import employee3 from '../assets/aboutus/em3.jpg';
+import employee4 from '../assets/aboutus/em4.jpg';
 
 const Aboutus = () => {
     return (
         <div className="aboutus-page">
-            {/* Banner Section */}
-            <div className="banner-section">
-                <div className="banner-content">
-                    <h1>Connecting global companies and top Indian talent</h1>
-                    <p>We are driven by the idea of creating opportunities.</p>
+            <div className="aboutus-content">
+                <div className="text-section">
+                    <h1>We build bridges <br />between <span>companies and customers</span></h1>
+                    <p>
+                        To build software that gives customer-facing teams at 
+                        small- and medium-sized businesses the ability to create 
+                        fruitful and enduring relationships with customers.
+                    </p>
+                </div>
+                <div className="image-section">
+                    <img src={officeimg} alt="Office Team" />
                 </div>
             </div>
-
-            {/* About Section */}
-            <div className="about-section">
-                <div className="about-content">
-                    <img src={require('../assets/aboutus/about.png')} alt="Paper Planes" className="about-image" />
-                    <div className="about-text">
+            {/* New Section */}
+            <div className="aboutus-details">
+                <hr className="divider" />
+                <div className="details-grid">
+                    <div className="left-column">
+                        <h2>Together we are strong</h2>
+                        <div className="ceo-info">
+                            <img src={ceoImage} alt="Brandon Shaw - CEO" />
+                            <p>Rakesh Jha <br /><span>Founder & CEO</span></p>
+                        </div>
+                    </div>
+                    <div className="right-column">
                         <p>
-                            Born in the difficult period of the pandemic, Uplers is a tech-enabled platform that makes hiring and getting hired reliable, simple, and fast.
+                            Our crew is always getting bigger, but we all work toward one goal: 
+                            to make sales success not only possible but inevitable for teams everywhere.
+                        
+                            In 2022, at vero eos et accusamus et iusto odio dignissimos ducimus 
+                            qui blanditiis praesentium voluptatum deleniti atque corrupti quos 
+                            dolores et quas molestias excepturi sint occaecati cupiditate non 
+                            provident, similique sunt in culpa qui officia deserunt mollitia animi, 
+                            id est laborum et dolorum fuga.
                         </p>
-                        <p>
-                        Leveraging the transformative power of AI & ML and remote work, Uplers matches deeply-vetted Indian talents with top companies, offering multiple engagement models enabling flexibility and scalability for hiring companies, as well as freedom and rewarding careers for top Indian tech and digital professionals.
-                        </p>
-                        <p>Uplers is already leveraged by hundreds of top companies, from hot start-ups to multinational organizations, and has more than 1 Million vetted Indian talent on its platform.</p>
+                        <blockquote>
+                            "Our goal is to build software that gives customer-facing teams at SMBs 
+                            the ability to create fruitful and enduring relationships with customers."
+                        </blockquote>
                     </div>
                 </div>
+                <hr className="divider" />
             </div>
-
-
-            {/* Awards Section */}
-            <div className="awards-section">
-                <div className="award-card">
-                    <img src={require('../assets/aboutus/grat-work.jpg')} alt="Great Place to Work" />
-                    <div className="award-content">
-                        <h4>Great Place to Work Certified</h4>
+            {/* New Section - Company Stats */}
+            <div className="company-stats">
+                <div className="stats-grid">
+                    <div className="stat-item">
+                        <h3>290+</h3>
+                        <p>Team member vero eos et accusamus ut iusto odio dignissimos ducimus qui blanditiis.</p>
                     </div>
-                </div>
-                <div className="award-card">
-                    <img src={require('../assets/aboutus/indian-achive-logo.png')} alt="India Achievers' Award" />
-                    <div className="award-content">
-                        <h4>India Achievers' Award</h4>
+                    <div className="stat-item">
+                        <h3>12+</h3>
+                        <p>Year experience vero eos et accusamus dignissimos ducimus qui blanditiis praesentium.</p>
                     </div>
-                </div>
-            </div>
-
-            {/* Founders Section */}
-            <div className="founders-section">
-                <div className='heading'>
-                    <h2>Our Founders</h2>
-                </div>
-                {/* CEO Section */}
-                <div className="founder">
-                    <div className="founder-info">
-                        <h3><spam className="foundername">Rakesh Jha</spam>, Founder & CEO</h3>
-                        <p>
-                        Our visionary leader is a serial entrepreneur who has built and scaled several businesses. Jaymin has a singular belief in the value of focus. He helps everyone at Uplers remain absorbed in our endeavor to solve somplex challenges of clients and talents. He is passionate about adopting innovative technologies to solve real-world challenges. Besides his strong belief in uplifting everyone the organization touches, it's his passion for actionable data and decisions thereof that embody the magical, positive, and transformative spirit of a Unicorn.
-                        </p>
-                    </div>
-                    <div className="founder-img">
-                        <img src={require('../assets/aboutus/JayminBhuptani.png')} alt="Rakesh Jha" />
-                    </div>
-                </div>
-
-                {/* Co-Founder Section */}
-                <div className="founder">
-                    <div className="founder-img">
-                        <img src={require('../assets/aboutus/NitalShah.png')} alt="Nital Shah" />
-                    </div>
-                    <div className="founder-info">
-                        <h3><spam className="foundername">Prabhat Jha</spam>, Co-Founder & COO</h3>
-                        <p>
-                        Nital embodies the much-needed structure, and decisiveness that enables Uplers to navigate complex and uncertain micro and macro environments, whilst keeping our eye on the mission. With a steadfast yet flexible approach, Nital anchors our teams and processes, fostering a people-centric, growth-focused culture built on trust and transparency.
-                        </p>
+                    <div className="stat-item">
+                        <h3>20K+</h3>
+                        <p>Lovely customers vero eos et accusamus et iusto odio qui blanditiis praesentium.</p>
                     </div>
                 </div>
             </div>
 
-            {/* Brand Section */}
-            <div className="brand-section">
-                <div className="brand-content">
-                    <div className="brand-text">
-                        <h2>Our Brand</h2>
-                        <p>
-                            We are driven by the desire to uplift everyone we touch.
-                        </p>
-                        <p>
-                            Technology, Empathy, and Agility are the key pillars of our brand, enabling us to adapt quickly in response to changing market dynamics but doing so in the most humane way possible whilst leveraging the power of emerging technologies like AI & ML.
-                        </p>
-                        <p>
-                            Our origami-inspired design language reflects our ability to adapt quickly when needed whilst remaining creative and flexible in our approach to meet the current and future needs of clients and talents.
-                        </p>
-                        <p>
-                            We aspire to be most responsive to both clients and talents, and that's how we'll add the greatest value to all stakeholders throughout the typical hiring journey.
-                        </p>
+            {/* New Section - Meet Our Team */}
+            <div className="meet-team">
+                <h2>Meet our amazing team</h2>
+                <hr className="team-divider" />
+                <div className="team-grid">
+                    <div className="team-member">
+                        <img src={ceoImage} alt="Brandon Shaw - Founder & CEO" />
+                        <p>Rakesh Jha<br /><span>Founder & CEO</span></p>
                     </div>
-                    <div className="brand-image">
-                        <img src={require('../assets/aboutus/brand.png')} alt="Brand Representation" />
+                    <div className="team-member">
+                        <img src={employee1} alt="Floyd Stephens - CTO" />
+                        <p>Rudranil Shil<br /><span>Chief Technology Officer</span></p>
+                    </div>
+                    <div className="team-member">
+                        <img src={employee2} alt="Kate Clark - Director of People" />
+                        <p>Kate Clark<br /><span>Director of People</span></p>
+                    </div>
+                    <div className="team-member">
+                        <img src={employee3} alt="Eunice Doyle - Software Engineer" />
+                        <p>Eunice Doyle<br /><span>Software Engineer</span></p>
                     </div>
                 </div>
-            </div>
-            <div className='Pressbutton'>
-            <Link to="/presspage">
-                <button>View Press Coverage</button>
-            </Link>
+                <hr className="team-divider" />
             </div>
         </div>
     );
 };
 
 export default Aboutus;
+
+
+
+
