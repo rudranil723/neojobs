@@ -153,6 +153,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="popularcategories">
         <h2>Explore Popular Categories</h2>
         <div className="category-cards">
@@ -170,6 +171,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+
       <div className='brousecompany'>
         <button>
         Browse Companies
@@ -202,6 +204,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
       <div className="popularcity-section">
       <div className="heading">
         <h2>Popular Cities</h2>
