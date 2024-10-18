@@ -73,7 +73,7 @@ const Aboutus = () => {
 
             {/* New Section - Meet Our Team */}
             <div className="meet-team">
-                <h2>Meet our amazing team</h2>
+                <h2>Meet our <span>Current partners</span></h2>
                 <hr className="team-divider" />
                 <div className="team-grid">
                     <div className="team-member">
