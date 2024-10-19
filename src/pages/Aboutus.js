@@ -1,12 +1,21 @@
 import React from 'react';
 import '../sass/aboutus.scss';
+
 import officeimg from '../assets/aboutus/office.jpg';
 import ceoImage from '../assets/aboutus/ceo.jpg';
-import employee1 from '../assets/aboutus/em1.jpeg';
+
 import employee2 from '../assets/aboutus/em2.jpg';
 import employee3 from '../assets/aboutus/em3.jpg';
-import employee4 from '../assets/aboutus/em4.jpg';
+import company1 from '../assets/aboutus/em6.jpg';
+import company2 from '../assets/aboutus/em5.jpg';
+import company3 from '../assets/aboutus/em7.jpg';
+import company4 from '../assets/aboutus/em8.jpg';
+import company5 from '../assets/aboutus/em9.jpg';
+import company6 from '../assets/aboutus/em10.jpg';
 
+
+
+import employee4 from '../assets/aboutus/em4.jpg';
 const Aboutus = () => {
     return (
         <div className="aboutus-page">
@@ -77,20 +86,36 @@ const Aboutus = () => {
                 <hr className="team-divider" />
                 <div className="team-grid">
                     <div className="team-member">
-                        <img src={ceoImage} alt="Brandon Shaw - Founder & CEO" />
-                        <p>Rakesh Jha<br /><span>Founder & CEO</span></p>
+                        <img src={company1} alt="Brandon Shaw - Founder & CEO" />
+                        <p>NIKE</p>
                     </div>
                     <div className="team-member">
-                        <img src={employee1} alt="Floyd Stephens - CTO" />
-                        <p>Rudranil Shil<br /><span>Chief Technology Officer</span></p>
+                        <img src={company2} alt="Floyd Stephens - CTO" />
+                        <p>MICROSOFT</p>
                     </div>
                     <div className="team-member">
-                        <img src={employee2} alt="Kate Clark - Director of People" />
-                        <p>Kate Clark<br /><span>Director of People</span></p>
+                        <img src={employee3} alt="Kate Clark - Director of People" />
+                        <p>GOOGLE</p>
                     </div>
                     <div className="team-member">
-                        <img src={employee3} alt="Eunice Doyle - Software Engineer" />
-                        <p>Eunice Doyle<br /><span>Software Engineer</span></p>
+                        <img src={company3} alt="Eunice Doyle - Software Engineer" />
+                        <p>ADIDAS</p>
+                    </div>
+                    <div className="team-member">
+                        <img src={company5} alt="Eunice Doyle - Software Engineer" />
+                        <p>NETFLIX</p>
+                    </div>
+                    <div className="team-member">
+                        <img src={company6} alt="Eunice Doyle - Software Engineer" />
+                        <p>AMAZON</p>
+                    </div>
+                    <div className="team-member">
+                        <img src={company4} alt="Eunice Doyle - Software Engineer" />
+                        <p>TWITTER</p>
+                    </div>
+                    <div className="team-member">
+                        <img src={employee2} alt="Eunice Doyle - Software Engineer" />
+                        <p>APPLE</p>
                     </div>
                 </div>
                 <hr className="team-divider" />
@@ -116,6 +141,41 @@ const Aboutus = () => {
                             The collaborative environment encourages us to push boundaries and achieve excellence.”
                         </p>
                         <button onClick={() => window.location.href='/contact'}>Contact Us</button>
+                    </div>
+                </div>
+            </div>
+            <div className='aboutustestimonial'>
+            <h2>Read the <span>Testimonials</span></h2>
+                <div className='testimonial-container'>
+                    <div className='testimonial-card' style={{ backgroundColor: '#dca992' }}>
+                        <div className='testimonial-quote'>
+                            <span className='quote-symbol'>&ldquo;</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        </div>
+                        <div className='testimonial-author'>
+                            <h4>Name Goes Here</h4>
+                            <p>Job Title Goes Here</p>
+                        </div>
+                    </div>
+                    <div className='testimonial-card' style={{ backgroundColor: '#43b383' }}>
+                        <div className='testimonial-quote'>
+                            <span className='quote-symbol'>&ldquo;</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        </div>
+                        <div className='testimonial-author'>
+                            <h4>Name Goes Here</h4>
+                            <p>Job Title Goes Here</p>
+                        </div>
+                    </div>
+                    <div className='testimonial-card' style={{ backgroundColor: '#539ccd' }}>
+                        <div className='testimonial-quote'>
+                            <span className='quote-symbol'>&ldquo;</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        </div>
+                        <div className='testimonial-author'>
+                            <h4>Name Goes Here</h4>
+                            <p>Job Title Goes Here</p>
+                        </div>
                     </div>
                 </div>
             </div>
