@@ -5,7 +5,6 @@ body {
   font-family: $font-stack; 
 }
 
-
 .site-footer {
     margin-top: 5%;
     background-color: #2b2b2b;
@@ -22,7 +21,11 @@ body {
     }
 
     .footer-logo img {
-        max-width: 150px;
+        max-width: 200px; // Increased size
+        width: 100px;
+        height: 200px; // Make it square
+        border-radius: 15px; // Rounded edges
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 10px 12px rgba(0, 0, 0, 0.1); // 3D effect
     }
 
     .footer-links {
@@ -100,13 +103,19 @@ body {
 
         p {
             margin: 0;
+            margin-left: 150px; // Added left margin for positioning
         }
 
         .social-icons {
+            display: flex;
+            margin-right: 150px;
+
             a {
                 color: #ccc;
-                margin-left: 15px;
-                font-size: 18px;
+                list-style: none;
+                list-style-type: none;
+                margin-left: 35px;
+                font-size: 20px; // Slightly increased icon size
                 transition: color 0.3s ease;
 
                 &:hover {
