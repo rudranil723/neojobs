@@ -108,20 +108,24 @@ body {
 
         .social-icons {
             display: flex;
-            margin-right: 150px;
-
-            a {
-                color: #ccc;
-                list-style: none;
-                list-style-type: none;
-                margin-left: 35px;
-                font-size: 20px; // Slightly increased icon size
-                transition: color 0.3s ease;
-
-                &:hover {
-                    color: #fff;
-                }
+            margin-right: 155px;
+            list-style: none; // Ensure the list style is none for the parent container
+          
+            li {
+              margin-left: 35px;
+              list-style: none; // Ensure no list dots appear on each item
             }
-        }
+          
+            a {
+              color: #ccc;
+              font-size: 20px; // Slightly increased icon size
+              transition: color 0.3s ease;
+          
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+          
     }
 }
