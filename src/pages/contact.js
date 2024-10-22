@@ -36,7 +36,7 @@ const ContactPage = () => {
                 <div className="office-details">
                     <h2>Our Office</h2>
                     <p> WeWork Vaishnavi Signature. 78/9, Outer Ring Road, Hobli, beside Soul Space Spirit Central Mall, Bellandur, Varthur, Bengaluru, Karnataka 560103</p>
-                    <p><a href="mailto:mail@example.com" className="email-link">mail@example.com</a></p>
+                    <p><a href="neoworkstechnologies@gmail.com" className="email-link">neoworkstechnologies@gmail.com</a></p>
                     <div className="social-icons">
                         <a href="#"><i className="fab fa-facebook"></i></a>
                         <a href="#"><i className="fab fa-twitter"></i></a>
