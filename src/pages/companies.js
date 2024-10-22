@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import '../sass/companies.scss';
-import { FaMapMarkerAlt, FaDollarSign } from 'react-icons/fa';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import tesla from '../assets/jobs/company-logo-06-150x150.webp';
 import BG from '../assets/companies/logo1.jpg';
 import KFC from '../assets/companies/logo2.jpg';
