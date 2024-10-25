@@ -170,11 +170,11 @@
       gap: 1rem;
   
       .skill-card {
-        flex-basis: 23%; // Adjusted to fit 4 cards in one line with proper spacing
+        flex-basis: 23%; // Fits 4 cards in a row
         background-color: #f8f9fa;
-        border-radius: 10px;
+        border-radius: 12px; // Slightly more rounded corners
         padding: 1.5rem;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1); // Slightly deeper shadow
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         animation: fadeInUp 0.8s ease-out both;
@@ -195,22 +195,24 @@
         }
   
         img {
-          width: 50px;
-          height: 50px;
+          width: 55px; // Slightly larger for emphasis
+          height: 55px;
           margin-bottom: 1rem;
-          transition: transform 0.3s ease;
+          transition: transform 0.3s ease, filter 0.3s ease;
         }
-  
+      
         h3 {
-          font-size: 1.25rem;
+          font-size: 1.3rem; // Slightly larger text
           margin-bottom: 0.5rem;
+          color: #343a40;
         }
-  
+      
         p {
           font-size: 1rem;
           color: #6c757d;
+          line-height: 1.4; // Improved readability
         }
-  
+      
         // Hover effect
         &:hover {
           transform: translateY(-8px);

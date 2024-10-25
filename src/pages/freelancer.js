@@ -3,14 +3,14 @@ import '../sass/freelancer.scss';
 import bgg from '../assets/home/bgg.png';
 
 const categories = [
-    { name: "accounting", link: "/popularcategories/accounting" },
-    { name: "automotive", link: "/popularcategories/automotive" },
-    { name: "Category 3", link: "/category3" },
-    { name: "Category 4", link: "/category4" },
-    { name: "Category 5", link: "/category5" },
-    { name: "Category 6", link: "/category6" },
-    { name: "Category 7", link: "/category7" },
-    { name: "Category 8", link: "/category8" },
+    { name: "Accounting", link: "/popularcategories/accounting" },
+    { name: "Automotive", link: "/popularcategories/automotive" },
+    { name: "Grphic designing", link: "/category3" },
+    { name: "Marketing", link: "/category4" },
+    { name: "UI/UX", link: "/category5" },
+    { name: "Web devlopment", link: "/category6" },
+    { name: "App devlopment", link: "/category7" },
+    { name: "AIML", link: "/category8" },
   ];
   
 
@@ -19,7 +19,7 @@ const FreelancerPage = () => {
         <div>
             <div className='home-searchbar'>
                 <div className='search-form'>
-                    <h2>Find Job</h2>
+                    <h2>Find Freelancers</h2>
                     <p>Hire Experts or be hired in sales & marketing</p>
                     <input type="text" placeholder="Job title, Skill, Industry" />
                     <input type="text" placeholder="City, State or Zip" />
