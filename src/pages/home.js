@@ -97,9 +97,12 @@ const Home = () => {
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [imageCount]);
 
-  const handleGetStartedClick = () => {
-    console.log('Get Started button clicked');
-    navigate('/freelancerprofile');  // Navigate to freelancer profile page
+  const handleGetStarted = () => {
+    navigate('/LoginRegister'); // Navigate to the LoginRegister page
+  };
+
+  const handleBrowseCompanies = () => {
+    navigate('/companies'); // Navigate to /companies
   };
 
   return (
@@ -124,14 +127,18 @@ const Home = () => {
         <div className="search-right">
           <h2>Post a job and hire a pro!</h2>
           <p>We’re ready to work with you to help you reach your hiring goals.</p>
-          <button className="get-started-btn">Let’s Get Started</button>
+          <button className="get-started-btn" onClick={handleGetStarted}>
+                Get Started
+            </button>
         </div>
       </div>
+
       <div className="category-buttons">
         <button className="category-btn">Automotive Jobs</button>
         <button className="category-btn">Design, Art & Multimedia</button>
         <button className="category-btn">Healthcare</button>
       </div>
+
       <div className='indiatop'>
         <h2>India’s top tech and digital talents</h2>
         <div className="card-container">
@@ -173,8 +180,8 @@ const Home = () => {
       </div>
 
       <div className='brousecompany'>
-        <button>
-        Browse Companies
+        <button onClick={handleBrowseCompanies}>
+          Browse Companies
         </button>
       </div>
 
@@ -242,7 +249,7 @@ const Home = () => {
       </div>
     </div>
       <div className="get-started-container">
-          <button className="get-started-button" onClick={handleGetStartedClick}>
+          <button className="get-started-button" onClick={handleGetStarted}>
               Get Started
           </button>
       </div>
