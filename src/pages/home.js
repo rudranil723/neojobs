@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../sass/home.scss';
 import '../css/home.css';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 import networkIcon from '../assets/home/tech-icon-network.svg';
@@ -199,15 +200,15 @@ const Home = () => {
         </div>
       </div>
 
-
-
       <div className="enhancebussiness" style={{marginTop: "5%"}}>
         <div className="overlay">
           <img src={officeimage} alt="Office" />
           <div className="content">
             <h2>Enhance Your Business</h2>
             <p>Earn extra income and unlock new opportunities by advertising your company</p>
-            <a href="F:/NEOJOBS/neojobs/src/components/getstarted.js" className="get-started-btn">Get Started</a>
+            <Link to="/loginregister" className="get-started-btn">
+            Get Started
+            </Link>
           </div>
         </div>
       </div>
