@@ -2,8 +2,10 @@
 @import 'variables';
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f9fafb; /* Light background similar to design */
+  font-family: $font-stack;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
 }
 
 .home-page {
@@ -531,3 +533,8 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .home-page {
+    margin: 2%;
+  }
+}
