@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo/logo1.png'; 
+import { Link } from 'react-router-dom'; // Make sure Link is imported
+import logo from '../assets/logo/logo1.png';
 
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -28,6 +28,7 @@ const Navbar = () => {
               <ul className="dropdown-menu">
                 <li><Link to="/freelancer/byskills">By Skills</Link></li>
                 <li><Link to="/freelancer/bylocation">By Locations</Link></li>
+                {/* Uncomment the following lines if you want to include more dropdown items */}
                 {/* <li><Link to="/freelancer/bycategories">By Categories</Link></li> */}
                 {/* <li><Link to="/freelancers/view-more">View More</Link></li> */}
               </ul>
@@ -40,7 +41,9 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="navbar-right">
-        <button>Login</button>
+        <Link to="/loginregister">
+          <button>Login</button>
+        </Link>
       </div>
     </header>
   );
