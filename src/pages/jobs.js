@@ -54,9 +54,9 @@ const JobsPage = () => {
           <div className="filter-item">
             <label className="filter-label">Range Salary</label>
             <div className="salary-options">
-              <label><input type="radio" name="salary" /> Under $1000</label>
-              <label><input type="radio" name="salary" /> $1000 to $2500</label>
-              <label><input type="radio" name="salary" /> $2500 to $5000</label>
+              <label><input type="radio" name="salary" /> Under $100</label>
+              <label><input type="radio" name="salary" /> Under $250</label>
+              <label><input type="radio" name="salary" /> Under $500</label>
               <label><input type="radio" name="salary" /> Custom</label>
             </div>
             <input type="range" min="500" max="5000" step="500" className="salary-range" />
@@ -85,6 +85,11 @@ const JobsPage = () => {
               <label><input type="checkbox" /> Engineering</label>
               <label><input type="checkbox" /> Customer Service</label>
             </div>
+          </div>
+          <div className='left-section-btn'>
+            <button>
+              Find Jobs
+            </button>
           </div>
         </div>
 
@@ -143,7 +148,6 @@ const JobsPage = () => {
                 <p>Collaborate with the marketing team to optimize conversion and develop persuasive copy.</p>
               </div>
             </div>
-
             <div className="job-card" onClick={handleJobClick}>
               <img src={logo2} alt="Company Logo 2" className="company-logo" />
               <div className="job-details">
@@ -158,6 +162,8 @@ const JobsPage = () => {
                 <p>Collaborate with the marketing team to optimize conversion and develop persuasive copy.</p>
               </div>
             </div>
+
+         
           </div>
         </div>
       </div>
