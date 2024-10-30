@@ -19,7 +19,7 @@ import FreelancerProfile from './pages/freelancerprofile/freelancerprofile';
 import Login from './components/login';
 import LoginRegister from './components/loginregister';
 import Register from './components/register';  
-import GetStarted from './components/getstarted';
+import Applepage from './pages/companypages/applepage';
 
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
         <Route path="/login" element={<Login />} />   
         <Route path="/LoginRegister" element={<LoginRegister />} /> 
         <Route path="/register" element={<Register />} /> 
-        <Route path="/GetStarted" element={<GetStarted />} /> 
+        <Route path="/applepage" element={<Applepage />} /> 
       </Routes>
       <Footer />
     </Router>

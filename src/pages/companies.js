@@ -105,7 +105,11 @@ const CompaniesPage = () => {
       const navigate = useNavigate();
     
       const handleCardClick = () => {
-        navigate(`/company/${id}`); 
+        if (id === "4") {
+          navigate(`/applepage`); // Navigate to Apple page if ID is 4
+        } else {
+          navigate(`/company/${id}`);
+        }
       };
     
       return (

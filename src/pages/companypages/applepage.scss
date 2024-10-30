@@ -1,0 +1,203 @@
+@import '../../sass/variables.scss';
+
+.apple-page {
+    font-family: $font-stack;
+    color: $dark-grey;
+}
+
+.header {
+    position: relative;
+    .header-image {
+        width: 100%;
+        height: 200px;
+        opacity: 0.7;
+    }
+    .header-content {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        display: flex;
+        align-items: center;
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        h1 {
+            color: $white;
+            font-size: $font-size-large;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+        .follow-button {
+            background-color: $secondary-color;
+            color: $white;
+            padding: $spacing-small $spacing-medium;
+            border: none;
+            border-radius: 5px;
+            margin-left: auto;
+            cursor: pointer;
+            margin-left: 5%;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $secondary-color;
+    height: $navbar-height;
+    font-size: $font-size-medium;
+
+    span{
+        padding: 2%;
+    }
+}
+.content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  
+    .text-section {
+      flex: 1;
+      margin-right: 20px;
+      margin-left: 5%;
+      
+      h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 15px;
+        line-height: 1.2;
+      }
+      span{
+        display: block;
+        font-size: 4rem;
+        color: $secondary-color;
+      }
+  
+      .learn-more-button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
+  
+    .images-section {
+      display: grid;
+      grid-template-areas:
+        "image2 image3"
+        "image1 image3";
+      gap: 10px;
+      margin-right: 5%;
+  
+      .image1 {
+        grid-area: image1;
+        width: 220px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      .image2 {
+        grid-area: image2;
+        width: 100px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      .image3 {
+        grid-area: image3;
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .info-section {
+    margin-left: 4%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  
+    .main-info {
+      flex: 0 0 70%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+      .info-box {
+        flex: 1 1 30%; // Ensures two columns within the main box
+        padding: 5px;
+  
+        p:first-child {
+          font-weight: bold;
+          color: #333;
+        }
+  
+        p:last-child {
+          color: #666;
+          margin: 0;
+        }
+      }
+    }
+  
+    .social-box {
+      flex: 0 0 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  
+      p {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+  
+      .social-media-icons {
+        display: flex;
+        gap: 10px;
+  
+        a {
+          color: #333;
+          font-size: 1.5rem;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #0073e6; // Example hover color
+          }
+        }
+      }
+    }
+  }
+  
